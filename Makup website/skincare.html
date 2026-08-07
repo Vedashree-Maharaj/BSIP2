@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skin Care - GlowGlam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+      background-color: rgb(236, 235, 245);
+      scroll-behavior: smooth;
+    }
+    .product-item {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .product-item:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #111111;
+      padding: 20px;
+      margin-top: 3%;
+      text-align: center;
+      color: white;
+    }
+    .product-image {
+      object-fit: cover;
+      height: 150px;
+      width: 100%;
+    }
+    .panel-body {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .panel-body h4 {
+      font-size: 1.25rem;
+      margin: 10px 0;
+    }
+    .panel-body p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    button {
+      height: 40px;
+      width: 180px;
+      border-radius: 40%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgb(225, 216, 243);
+      font-size: medium;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: rgb(247, 154, 150);
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .video-container .video {
+      margin-right: 30px;
+    }
+    .video-container .description {
+      max-width: 500px;
+      text-align: left;
+    }
+    .social-icons a {
+      font-size: 30px;
+      margin-right: 15px;
+      color: white;
+    }
+
+    .social-icons a:hover {
+      color: #f39c12;
+    }
+    .footer-nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-nav li {
+      margin: 0 15px;
+    }
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .footer-nav a:hover {
+      color: #f5aba1;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+    .social-icons a {
+      font-size: 30px;
+      color: white;
+    }
+    .social-icons a:hover {
+      color: #f75a5a;
+    }
+    .social-icons p {
+      margin: 0;
+    }
+    .navbar .navbar-brand img {
+      height: 40px;
+      width: auto;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GlowGlam</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container text-center" >
+  <h1>Skin Care Products</h1>
+  <p>Discover the best skincare products to nourish and rejuvenate your skin.</p>
+</div>
+<br><br>
+<!-- Video and Description Section -->
+<div class="container video-container">
+  <div class="video">
+    <video width="640" height="360" controls>
+      <source src="skincare_vdo" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="description">
+    <p>At GlowGlam, we offer a range of skincare products that will transform your skincare routine. From moisturizers to serums, we have products for all skin types and needs. Watch the video to see how our skincare products can help you achieve radiant, healthy skin.</p>
+  </div>
+</div>
+<br><br>
+<!-- Skin Care Products Section -->
+<div class="container-fluid" style="background-color: rgb(244, 242, 247); ">
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="cleanser.webp" class="product-image" alt="Product 1">
+          <h4>Gentle Cleanser</h4>
+          <p>Our gentle cleanser removes dirt and makeup without stripping your skin of its natural oils.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="moisturizer.jpg" class="product-image" alt="Product 2">
+          <h4>Hydrating Moisturizer</h4>
+          <p>Keep your skin soft and hydrated with our lightweight, fast-absorbing moisturizer.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="serum.jpg" class="product-image" alt="Product 3">
+          <h4>Vitamin C Serum</h4>
+          <p>This serum brightens the skin and reduces the appearance of dark spots.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="skin_toner.jpg" class="product-image" alt="Product 4">
+          <h4>Soothing Toner</h4>
+          <p>This toner helps balance your skin's pH while calming redness and irritation.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="face_mask1.jpeg" class="product-image" alt="Product 5">
+          <h4>Clay Mask</h4>
+          <p>Detoxify your skin with this clarifying clay mask that draws out impurities.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="spf.webp" class="product-image" alt="Product 6">
+          <h4>SPF Sunscreen</h4>
+          <p>Protect your skin from harmful UV rays with our lightweight sunscreen.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+    <h2>GlowGlam</h2><br>
+    <ul class="footer-nav">
+     
+      <li><a href="#">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  
+    <!-- Social Icons -->
+    <div class="footer">
+      <p>&copy; 2025 GlowGlam. All rights reserved.</p>
+      <p>Follow us on:
+        <div class="social-icons">
+          <a href="https://www.facebook.com" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </p>
+    </div>
+  
+  </body>
+  </html>
