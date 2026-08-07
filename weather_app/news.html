@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather News</title>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    background: url('bg_img.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+       .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 70, 0.9), rgba(0, 0, 130, 0.9));
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: -10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+        border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.main {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .news-box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 50, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .news-box:hover {
+      transform: scale(1.02);
+    }
+
+    .news-box h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .news-box p {
+      text-align: justify;
+    }
+
+        footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    
+    position: relative;
+    bottom: 0;
+}
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">🌤️ SkyCast</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">Weather News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+
+            <li><a href></a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <h1>Latest Weather Headlines</h1>
+        <div class="news-grid">
+    
+          <div class="news-box">
+            <h3>Monsoon Arrives Early in Southern India</h3>
+            <p>The monsoon has hit Kerala five days ahead of schedule, bringing much-needed relief from the summer heat. Heavy rainfall is expected over the next week with isolated thunderstorms and potential flooding in low-lying areas.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Heatwave Sweeps Across Northern States</h3>
+            <p>Delhi, Rajasthan, and parts of Uttar Pradesh are facing severe heatwaves, with temperatures crossing 45°C. Residents are advised to stay indoors during peak hours and stay hydrated. Authorities have issued a red alert.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Himachal Snowfall Breaks 20-Year Record</h3>
+            <p>Shimla and Manali witnessed heavy snowfall this week, breaking records from the last two decades. Tourists have flocked to the hills, though travel advisories are in place due to slippery roads and blocked routes.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Cyclone Alert Issued for Bay of Bengal</h3>
+            <p>The IMD has issued a cyclone alert for the eastern coast with Cyclone 'Vaayu' forming over the Bay of Bengal. States like Odisha and West Bengal are on high alert with evacuation drills underway in coastal regions.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Western Ghats to Receive Intense Showers</h3>
+            <p>Parts of Maharashtra and Karnataka in the Western Ghats are likely to experience continuous heavy rains for the next few days. Landslide warnings have been issued in hilly areas as a precaution.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>IMD Predicts Wetter-than-Average September</h3>
+            <p>The Indian Meteorological Department has forecast above-average rainfall in most regions for September. Farmers are optimistic, with expectations of better crop yields due to consistent rainfall patterns.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Air Quality Worsens After Dust Storm in Gujarat</h3>
+            <p>A massive dust storm hit Gujarat yesterday evening, significantly reducing visibility and impacting air quality. The AQI in Ahmedabad spiked to ‘Very Poor’ levels, prompting a health advisory from local officials.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Chennai Braces for Thunderstorms</h3>
+            <p>Chennai is likely to experience heavy thunderstorms over the next 48 hours due to a depression in the Bay of Bengal. Schools have been advised to shut early and fishermen are warned not to venture into the sea.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Light Snow Predicted in Kashmir This Weekend</h3>
+            <p>The Kashmir Valley is expected to witness light snowfall on higher altitudes while the plains may receive rainfall. Tourists planning trips are advised to check road conditions and carry adequate warm clothing.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Flood Situation Improves in Assam</h3>
+            <p>The water levels in the Brahmaputra have started receding, improving the flood situation in Assam. Relief camps continue to operate for displaced families, and restoration work is underway in affected areas.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Cold Wave Hits Central India</h3>
+            <p>Unusually cold temperatures have gripped Madhya Pradesh and Chhattisgarh. Night temperatures dropped below 10°C in several regions. Authorities have urged citizens to take proper precautions, especially children and elderly.</p>
+          </div>
+    
+          <div class="news-box">
+            <h3>Lightning Kills 5 in Bihar</h3>
+            <p>Tragic lightning strikes claimed five lives in rural Bihar during an evening thunderstorm. Locals are urged to avoid open fields and seek shelter during lightning activity. Compensation has been announced for the families.</p>
+          </div>
+    
+        </div>
+      </div>
+    <footer>
+        <p>🌐 Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather API</a></p>
+        <p>
+            <a href="#">Home</a> | 
+            <a href="help.html">Help</a> | 
+            <a href="contact.html">Contact</a>  |
+            <a href="news.html">News</a>
+        </p>
+        <p>🌡️ Temperature: Celsius (°C) | 💨 Wind Speed: Meters per second (m/s) | 🌦️ Tip: Always carry an umbrella if rain is expected! ☂️</p>
+        <p>© 2024 WeatherApp | Designed by Vedashree 🌍</p>
+    </footer>
+</body>
+</html>

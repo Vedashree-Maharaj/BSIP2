@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact</title>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    background: url('bg_img.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+        .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 70, 0.9), rgba(0, 0, 130, 0.9));
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: -10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    
+    position: relative;
+    bottom: 0;
+}
+        .contact-container {
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-container h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-container input, .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 12px 24px;
+            background: royalblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">🌤️ SkyCast</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">Weather News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href=""></a></li>
+
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </div>
+<br><br><br><br><br><br><br>
+    <footer>
+        <p>🌐 Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather API</a></p>
+        <p>
+            <a href="#">Home</a> | 
+            <a href="help.html">Help</a> | 
+            <a href="contact.html">Contact</a>  |
+            <a href="news.html">News</a>
+        </p>
+        <p>🌡️ Temperature: Celsius (°C) | 💨 Wind Speed: Meters per second (m/s) | 🌦️ Tip: Always carry an umbrella if rain is expected! ☂️</p>
+        <p>© 2024 WeatherApp | Designed by Vedashree 🌍</p>
+    </footer>
+</body>
+</html>
