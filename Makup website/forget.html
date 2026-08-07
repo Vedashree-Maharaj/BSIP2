@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #ffffff;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .social-login-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .social-login-icons i {
+            font-size: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .social-login-icons i:hover {
+            transform: scale(1.1);
+        }
+        .social-login-icons .google {
+            color: #db4437;
+        }
+        .social-login-icons .facebook {
+            color: #3b5998;
+        }
+        .social-login-icons .twitter {
+            color: #1da1f2;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        input:focus {
+            border-color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            border-radius: 5px;
+            width: 100%;
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        p a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Forget Password</h2>
+        
+        <div class="social-login-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter twitter"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-google google"></i></a>
+        </div>
+
+        <form action="forget.jsp" method="post">
+            <input type="email" name="l1" placeholder="Enter your Email" required>
+            <input type="password" name="l2" placeholder="Enter New Password" required>
+            <button type="submit">Update Password</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+</body>
+</html>

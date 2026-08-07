@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hair Care - GlowGlam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+      background-color: rgb(236, 235, 245);
+      scroll-behavior: smooth;
+    }
+    .product-item {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .product-item:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #111111;
+      padding: 20px;
+      margin-top: 3%;
+      text-align: center;
+      color: white;
+    }
+    .product-image {
+      object-fit: cover;
+      height: 150px;
+      width: 100%;
+    }
+    .panel-body {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .panel-body h4 {
+      font-size: 1.25rem;
+      margin: 10px 0;
+    }
+    .panel-body p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    button {
+      height: 40px;
+      width: 180px;
+      border-radius: 40%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgb(225, 216, 243);
+      font-size: medium;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: rgb(247, 154, 150);
+    }
+    .video-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .video-container .video {
+      margin-right: 30px;
+    }
+    .video-container .description {
+      max-width: 500px;
+      text-align: left;
+    }
+    .social-icons a {
+      font-size: 30px;
+      margin-right: 15px;
+      color: white;
+    }
+
+    .social-icons a:hover {
+      color: #f39c12;
+    }
+    .footer-nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-nav li {
+      margin: 0 15px;
+    }
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .footer-nav a:hover {
+      color: #f5aba1;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+    .social-icons a {
+      font-size: 30px;
+      color: white;
+    }
+    .social-icons a:hover {
+      color: #f75a5a;
+    }
+    .social-icons p {
+      margin: 0;
+    }
+    .navbar .navbar-brand img {
+      height: 40px;
+      width: auto;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GlowGlam</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <h1>Hair Care Products</h1>
+  <p>Discover the best hair care products for healthy, beautiful hair.</p>
+</div>
+<br><br>
+<!-- Video and Description Section -->
+<div class="container video-container">
+  <div class="video">
+    <video width="640" height="360" controls>
+      <source src="hair_vdo" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="description">
+    <p>At GlowGlam, we offer a variety of hair care products designed to nourish, hydrate, and strengthen your hair. Watch the video to discover how our products can help you achieve shiny, smooth, and healthy hair.</p>
+  </div>
+</div>
+<br><br>
+<!-- Hair Care Products Section -->
+<div class="container-fluid" style="background-color: rgb(244, 242, 247); ">
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="shampoo.jpg" class="product-image" alt="Product 1">
+          <h4>Hydrating Shampoo</h4>
+          <p>Our hydrating shampoo helps to nourish dry, damaged hair, leaving it soft and silky.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="conditioner.jpg" class="product-image" alt="Product 2">
+          <h4>Repairing Conditioner</h4>
+          <p>This conditioner restores shine and vitality to damaged hair, promoting healthy growth.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="hair_serum" class="product-image" alt="Product 3">
+          <h4>Smoothing Hair Serum</h4>
+          <p>Fight frizz and add shine with our lightweight smoothing serum.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="hair_mask.jpg" class="product-image" alt="Product 4">
+          <h4>Deep Conditioning Mask</h4>
+          <p>This deep conditioning mask helps restore moisture and softness to damaged hair.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="vedichairoil.webp" class="product-image" alt="Product 5">
+          <h4>Hair Growth Oil</h4>
+          <p>Our hair growth oil stimulates scalp circulation and encourages healthy hair growth.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-sm-2 product-item">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="hair_sunscreen.jpg" class="product-image" alt="Product 6">
+          <h4>Hair Sunscreen</h4>
+          <p>Protect your hair from the damaging effects of UV rays with our hair sunscreen.</p>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <h2>GlowGlam</h2><br>
+    <ul class="footer-nav">
+     
+      <li><a href="#">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  
+    <!-- Social Icons -->
+    <div class="footer">
+      <p>&copy; 2025 GlowGlam. All rights reserved.</p>
+      <p>Follow us on:
+        <div class="social-icons">
+          <a href="https://www.facebook.com" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </p>
+    </div>
+  
+  </body>
+  </html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fragrances - GlowGlam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      padding-top: 50px;
+      background-color: rgb(236, 235, 245);
+      scroll-behavior: smooth; 
+    }
+    .category-title {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #3a3a3a;
+    }
+    .category-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+      
+    }
+    .category-container .category-item {
+      width: 40%;
+      height: 10%;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .category-container .category-item:hover {
+      transform: scale(1.05);
+    }
+    .category-container img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .video-container .video {
+      margin-right: 30px;
+    }
+    .video-container .description {
+      max-width: 500px;
+      text-align: left;
+      
+    }
+    
+    .footer {
+      background-color: #111111;
+      padding: 40px 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 350px;
+    }
+    .footer-nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .newsletter { background:#111111; color: white; padding: 20px; text-align: center; }
+    .live-chat { position: fixed; bottom: 20px; right: 20px; background: #ff4081; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
+   
+    .footer-nav li {
+      margin: 0 15px;
+    }
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .footer-nav a:hover {
+      color: #f5aba1;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+    .social-icons a {
+      font-size: 30px;
+      color: white;
+    }
+    .social-icons a:hover {
+      color: #f75a5a;
+    }
+    .social-icons p {
+      margin: 0;
+    }
+    .navbar .navbar-brand img {
+      height: 40px;
+      width: auto;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GlowGlam</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="help.html">Help</a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- Cart Icon -->
+      
+      <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="cart1.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container text-center" style="font-family: Algerian;">
+  <h1>Fragrance Collection</h1>
+  <p>Explore a range of high-quality fragrances for both men and women.</p>
+</div>
+
+<!-- Video and Description Section -->
+<div class="container video-container">
+    <div class="video">
+      <video autoplay loop muted width="800" height="450">
+        <source src="fragrance_vdo" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="description">
+        <p>Welcome to GlowGlam! Our fragrance collection includes the finest scents for both men and women. Whether you prefer bold and spicy notes or soft, floral fragrances, we have something to complement your style. Watch the video to explore more about our fragrance range and how they can elevate your personal scent experience.</p>
+    </div>
+  </div>
+  <br>
+ <center><h1 style="background-color: #f5aba1;">Browse categories of Fragrances</h1></center> 
+<!-- Category Sections -->
+<div class="container category-container">
+  <!-- Men's Fragrance Category -->
+  <div class="category-item">
+    <img src="mens_spray" alt="Men's Fragrances">
+    <h2 class="category-title">Men's Fragrances</h2>
+    <p>Explore a range of bold and refined scents designed to suit every occasion.</p>
+    <a href="mens-fragrances.html" class="btn btn-primary">View More</a>
+  </div>
+
+  <!-- Women's Fragrance Category -->
+  <div class="category-item">
+    <img src="womens_spray.jpg" alt="Women's Fragrances">
+    <h2 class="category-title">Women's Fragrances</h2>
+    <p>Discover elegant and floral fragrances that perfectly complement your style.</p>
+    <a href="womens-fragrances.html" class="btn btn-primary">View More</a>
+  </div>
+</div>
+<!-- Newsletter Subscription -->
+<div class="newsletter">
+  <h3>Subscribe to Our Newsletter</h3>
+  <p>Get exclusive offers and updates</p>
+  <input type="email" placeholder="Enter your email" class="form-control" style="width: 300px; display: inline;">
+  <button class="btn btn-success">Subscribe</button>
+</div>
+
+<!-- Live Chat Button -->
+<div class="live-chat">💬 Chat with Us</div>
+<!-- Footer -->
+<div class="footer">
+  <h2>GlowGlam</h2><br>
+  <ul class="footer-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com" class="btn btn-social-icon btn-facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.twitter.com" class="btn btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+  <p>&copy; 2025 GlowGlam. All rights reserved.</p>
+</div>
+
+</body>
+</html>
