@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social welfare</title>
+    <style>
+        body {
+            background: #f9f9f9;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+           
+        }
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 100; 
+    
+}
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .scheme-header-image {
+            width: 100%;
+            max-width: 1600px;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 9px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 5%; 
+            transform: translate(0, -50%); 
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(46, 48, 53);
+           
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .scheme-compartment {
+            font-family: cambria;
+            font-size: 17px;
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            background: white;
+            color: rgb(5, 5, 5);
+            transition: 0.3s ease, box-shadow 0.3s ease;
+            background-color: rgb(247, 198, 178);
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+
+        .scheme-compartment:hover{
+            color: black;
+            box-shadow: 0 0 20px 10px rgba(11, 11, 11, 0.1);
+        }
+
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .details h3 {
+            margin-left: 20px;
+        }
+
+        .benefits, .eligibility, .documents-required {
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        div {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .scheme-image {
+            float: left;
+            margin-left: 5px;
+            margin-top: -20px;
+            max-width: 110px;
+            height:110px;
+            border-radius: 8px;
+        }
+        .scheme-name {
+            flex-grow: 1; 
+        }
+    </style>
+    <body>
+    <div class="image-container">
+        <img src="social.webp" alt="Social welfare & Empowerment" class="scheme-header-image">
+        <div class="overlay-text"> Social welfare & <br> Empowerment</div>
+    </div>
+<br/><br/>
+
+<!--Scheme 1-->
+<div class="scheme-compartment" onclick="toggleDetails('details1')">
+    <img src="" alt="" class="scheme-image">
+    <h2>Dr. Ambedakar Centrally Sponsored Scheme of Post-Matric Scholarships for the Economically Backward Class (EBC) Students</h2>
+    Ministry Of Social Justice and Empowerment
+    <div class="details" id="details1">
+    <p>"Dr. Ambedakar Centrally Sponsored Scheme of Post-Matric Scholarships for the Economically Backward Class (EBC) Students" is a Scholarship Scheme by the Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment. The objective of the scheme is to provide financial assistance to the Economically Backward Class (EBC) students studying at the post-matriculation or post-secondary stage to enable them to complete their education. These scholarships shall be available for studies in India only and will be awarded by the Government of State/Union Territory to which the applicant actually belongs, i.e. permanently settled.</p>
+    <h3>Eligibility</h3>
+    <p>1. The scholarships will be open to Indian nationals belonging to the General Category (Other than Schedule Caste, Schedule Tribe and Other Backward Classes).</p>
+    <p>2. These scholarships will be given for the study of all recognized post-matriculation or post-secondary courses pursued in Government institutions.</p>
+    <p>3. Students pursuing Post-graduate courses in medicine will be eligible if they are not allowed to practice during the period of their course.</p>
+    <p>4. Students who after failing or passing the undergraduate/Post-Graduate examinations in Arts/Science/Commerce join any recognized professional or Technical certificate/diploma/degree courses will be awarded scholarships if otherwise eligible. No subsequent failure will be condoned except for courses in Group 'A' and no further change in the course will be allowed.</p>
+    <p>5. Students who pursue their studies through correspondence courses will be eligible towards reimbursement of a non-refundable fee. The term correspondence includes distant and continuing education. Besides reimbursement of non-refundable fees, such students will also be eligible for an annual allowance of Rs. 900/- for essential/prescribed books, as applicable.</p>
+    <p>6. Only two boys of the same parents/guardians will be entitled to receive scholarships. This restriction will, however, not apply to girls. Accordingly, scholarships availed by girls of the same parents/guardian will not adversely affect the admissibility of availing scholarships upto two boys of the same parents/guardian.</p>
+    <p>7. A scholarship holder under this Scheme will not hold any other scholarship/stipend. If awarded any other scholarship/stipend, the student can exercise his/her option for either of the two scholarships/stipends, whichever is more beneficial to him/her and should inform the awarding authority through the Head of the Institution about the option made. No scholarship will be paid to the students under this Scheme from the date he/she accepts any other scholarships/stipend. The student can, however, accept free lodging or a grant or ad-hoc monetary help from the State Government or any other source for the purchase of books, and equipment or for meeting the expenses on board and lodging, in addition to the scholarship amount paid under this Scheme.</p>
+    <p>8. Scholarship holders who are receiving coaching in any of the pre-examination training centres with financial assistance from the Central Government/State Government will not be eligible for a stipend under the coaching schemes for the duration of the coaching programme.</p>
+    <p>9. Employed students whose income combined with the income of their parents/guardians does not exceed ₹ 1,00,000 per annum shall be eligible for post-matric scholarships to the extent of reimbursement of all compulsorily payable non-refundable fees.</p>
+    <p>10. In the case of unemployed students whose parents/guardians income from all sources does not exceed ₹ 1,00,000 per annum will be entitled to the scholarship under the Scheme.</p>
+    <h3>Documents Required</h3>
+    <p>1. One copy of the application for the scholarship in the prescribed form (a separate application form may be prescribed by the concerned State Government/UT for a 'fresh' and 'renewal' scholarship).</p>
+    <p>2. One copy of the passport-size photograph with signatures of the student thereon (for fresh scholarship)</p>
+    <p>3. One attested copy of each of the certificates/diplomas/degrees etc., with respect of all examinations passed</p>
+    <p>4. A certificate (in original) of income issued by an authorized Revenue Officer, not below the rank of Tehsildar.</p>
+    <p>5. A receipt in acknowledgement of the scholarship in the previous year on the form attached to the application only duly countersigned by the Head of the Institution concerned, if the applicant was in receipt of a scholarship under this Scheme in the preceding year.</p>
+    <h3>Benefits</h3>
+    <p>1. Degree and Post Graduate level courses including M.Phil., PhD and Post Doctoral research in Medicine (Allopathic, Indian and other recognized systems of medicines), Engineering, Technology, Planning, Architecture, Design, Fashion Technology, Agriculture, Veterinary and Allied Sciences, Management, Business Finance/Administration, Computer Science/Applications.</p>
+    <p>2. Post Graduate Diploma courses in various branches of management & medicine.</p>
+    <p>3. C.A./ I.C.W.A./ C.S./ I.C.F.A. etc.</p>
+    <p>4. M. Phil., Ph.D. and Post-Doctoral Programmes (D.Litt., D.Sc. etc.).</p>
+    <p>5. L.L.M</p>
+    <p><b>Rate of Maintenance Allowance (₹ per month): Hostellers: 750; Day Scholars: 350.</b></p>
+    <p> Register Here: <a href="https://scholarships.gov.in/" target="_blank" style="font-size: 16px;">https://scholarships.gov.in/</a></p>
+    </div>
+    </div>
+    <!--Scheme 2-->
+    <div class="scheme-compartment" onclick="toggleDetails('details2')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Financial Assistance To Disabled Students Pursuing (10th, 11th, 12th Equivalent Exams)</h2>
+        Kerala
+        <div class="details" id="details2">
+        <p>The scheme “Financial Assistance to Disabled Students Pursuing (10th, 11th, 12th Equivalent Exams)” was launched by the Department of Social Justice, Government of Kerala. Under the scheme, financial assistance will be provided to such school dropouts to pursue SSLC, +1, +2 equivalent courses implemented by State Literacy Mission.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a resident of Kerala State.</p>
+        <p>2. The differently abled students with 40% or more disability are eligible to apply under the scheme.</p>
+        <p>3. Financial assistance will be provided to students falling in Above Poverty Line (APL) as well as Below Poverty Line (BPL) categories.</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity proof</p>
+        <p>2. Passport-size photo</p>
+        <p>3. Educational Certificates</p>
+        <p>4. Below Poverty Line (BPL) Card (If applicable)</p>
+        <p>5. Disability Certificate</p>
+        <p>6. Income Certificate/Copy of Ration card (If applicable)</p>
+        <p>7. Bank account details</p>
+        <h3>Benefits</h3>
+        <p>1. A person becomes disabled by birth or because of an accident or disease. The differently-abled persons face many hurdles in their day-to-day life. About 90% of disabled persons may not have received even primary education. They are forced to give up studies due to various factors, such as difficulty in going to educational institutions and inadequate road facilities. </p>
+        <p> Register Here: <a href="https://sjd.kerala.gov.in/scheme-info.php?scheme_id=MTE3c1Y4dXFSI3Z5" target="_blank" style="font-size: 16px;">https://sjd.kerala.gov.in/scheme-info.php?scheme_id=MTE3c1Y4dXFSI3Z5</a></p>
+        </div>
+        </div>
+    <!--Scheme 3 -->
+    <div class="scheme-compartment" onclick="toggleDetails('details3')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Scheme of Assistance for the Prevention of Alcoholism & Substance (Drugs) Abuse and for Social Defence Services: General Grant-in-Aid Programme for Financial Assistance in the Field of Social Defence</h2>
+        Ministry Of Social Justice and Empowerment
+        <div class="details" id="details3">
+        <p>"Scheme of Assistance for the Prevention of Alcoholism & Substance (Drugs) Abuse and for Social Defence Services" by the Ministry of Social Justice and Empowerment, Department of Social Justice and Empowerment, came into existence on 15th October 2008 through the merger of two Central Sector Schemes: the 'Scheme for the Prevention of Alcoholism & Substance (Drugs) Abuse' and 'General Grant in Aid Programme for Financial Assistance in the Field of Social Defence.' The scheme's objectives include creating awareness about the ill effects of alcoholism and substance abuse, as well as providing a comprehensive range of community-based services for indemnification, motivation, counselling, de-addiction, aftercare, and rehabilitation for whole-person recovery (WPR) of addicts.</p>
+        <h3>Eligibility</h3>
+        <p>1. The following types of organizations or institutions are eligible:</p>
+        <li>A Society registered under the Indian Societies Registration Act, 1860 (Act XXI of 1860)</li>
+        <li>A charitable non-profit-making company</li>
+        <li>A Public Trust registered under any law for the time being in force</li>
+        <li>Any registered non-official organization engaged in the conduct and promotion of social welfare.</li>
+        <li>Universities, research institutes, schools, statutory bodies like Panchayati Raj Institutions, Municipal Corporations, Town Area Committees, Red Cross Societies and their branches.</li>
+        <h3>Documents Required</h3>
+        <p>1. A copy of the site plans/layout of the proposed building, along with a rough sketch indicating the building's design, the area to be covered, and an estimated cost of construction should be submitted at this stage.</p>
+        <p>2. A certificate confirming that a site for building construction has been acquired by the voluntary organization or institution must be furnished at the time of the application. No grant will be sanctioned if a site hasn't been acquired. The grant cannot be used for the purchase of land.</p>
+        <h3>Benefits</h3>
+        <p>1. Construction of a building or extension of existing buildings, or rent of the building where the service is provided (staff quarters are excluded, except in the case of wardens, chowkidar, etc.).</p>
+        <p>2. Salaries and allowances of staff; minimal administration support can also be considered.</p>
+        <p>3. Cost of equipment, furniture, etc.</p>
+        <p>4. Charges related to the delivery of the service (education, training, food, etc.).</p>
+        <p>5. Stipends, etc., in the case of trainees.</p>
+        <p>6. Other charges as may be necessary for the proper operation of the program.</p>
+        <p> Guidelines to apply scheme: <a href="https://socialjustice.gov.in/writereaddata/UploadFile/sch-drug-1115.pdf" target="_blank" style="font-size: 16px;">https://socialjustice.gov.in/writereaddata/UploadFile/sch-drug-1115.pdf</a></p>
+        </div>
+        </div>
+    <!-- Scheme 4-->
+    <div class="scheme-compartment" onclick="toggleDetails('details4')">
+        <img src="" alt="" class="scheme-image">
+         <h2>Coaching Schemes For Sc/st/obc (non-creamy Layer) & Minority Students For Universities</h2>
+         Ministry Of Minority Affairs
+        <div class="details" id="details4">
+        <p>Coaching schemes for students belonging to SC (Scheduled Caste), ST (Scheduled Tribe), OBC (Other Backward Classes) (non-creamy layer), and minority communities are implemented to provide them with equal opportunities and support in pursuing higher education. These schemes aim to bridge the educational gap and enhance the competitiveness of these students. </p>
+        <h3>Eligibility</h3>
+        <p>1. Financial assistance under the scheme is available to such universities and colleges which come within the purview of Section 2(f) and are fit to receive central assistance under Section 12(B) of the UGC Act, 1956.</p>
+        <p>2. Institutions having a sufficient number of Scheduled Castes, Scheduled Tribes, and Minority Communities students will be considered for financial assistance. </p>
+        <p>3. General candidates holding BPL Cards (Below Poverty Line) issued by the Central Government /State Government may also be allowed for such coaching classes. </p>
+        <p>4. The percentage of OBC (non-creamy layer) and poor general candidates may be increased up to 40% if a sufficient number of Scheduled Castes, Scheduled Tribes, and Minority Communities students are not available.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar card</p>
+        <p>2. Caste/Community Certificate</p>
+        <p>3. Academic Transcripts or Mark Sheets</p>
+        <p>4. Bank Account Details</p>
+        <h3>Benefits</h3>
+        <p>1. The institutions can apply for one or more components of the scheme according to the number of enrolment of Scheduled Castes, Scheduled Tribes, OBC (Non-Creamy Layer), and Minorities Communities Students. If, the number of students in a particular class is more, additional section(s) may be included.  </p>
+        <p> Guideliness to Register: <a href="https://www.ugc.gov.in/pdfnews/1910509_Guidelines-for-Coaching-Schemes-university.pdf" target="_blank" style="font-size: 18px;">https://www.ugc.gov.in/pdfnews/1910509_Guidelines-for-Coaching-Schemes-university.pdf</a></p>
+    </div>
+        </div>
+    <!-- Scheme 5-->
+    <div class="scheme-compartment" onclick="toggleDetails('details5')">
+    <img src="" alt="" class="scheme-image">
+    <h2>Scholarship For Transgender Students</h2>
+    Kerala
+    <div class="details" id="details5">
+    <p>The scheme “Scholarship for Transgender Students” was launched by the Social Justice Department, Government of Kerala for providing scholarships to Transgender students from 7th standard onwards studying in State Government/ Government aided/ Self Financing schools.</p>
+    <h3>Eligibility</h3>
+    <p>1. Applicant should be Transgender.</p>
+    <p>2. Applicant should be a resident of Kerala.</p>
+    <p>3. Applicant should be a student and studying in State Government/ Government aided/ Self Financing schools/colleges.</p>
+    <p>4. The applicant should be studying in 7th Class to Diploma/Degree/PG Level.</p>
+    <p>5. There is no income limit.</p>
+    <h3>Documents Required</h3>
+    <p>1. Identity card i.e. Aadhaar Card, Election ID/ Voter ID</p>
+    <p>2. Mobile number</p>
+    <p>3. Email id</p>
+    <p>4. Passport size photo</p>
+    <p>5. Self-declaration Affidavit stating that the applicant is Transgender.</p>
+    <p>6. Bank details- Copy of Pass Book</p>
+    <p>7. Ration Card (If applicable)</p>
+    <p>8. Certificate issued by the Principal of the Educational Institution</p>
+    <p>9. Educational Certificates/Course Certificates</p>
+    <h3>Benefits</h3>
+    <p>1. Financial assistance is being provided to Transgender students on the following basis:</p>
+    <li>For Transgender students from 7th std. to 10th std.:  ₹1000/- per month for 10 months</li>
+    <li>For Transgender students studying in Plus One & Plus Two:  ₹1500/- per month for 10 months</li>
+    <li>For Transgender students pursuing Diploma, Degree, Post-Graduation, or Professional courses:  ₹2000/- per month for 10 months</li>
+    <p> Register Here: <a href="https://sjd.kerala.gov.in/schemes.php#" target="_blank" style="font-size: 16px;">https://sjd.kerala.gov.in/schemes.php#</a></p>
+    </div>
+    </div>
+    <!-- Scheme 6-->
+    <div class="scheme-compartment" onclick="toggleDetails('details6')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Financial Assistance under Odisha Working Journalist Welfare Scheme</h2>
+        Odisha
+        <div class="details" id="details6">
+        <p>The scheme “Odisha Working Journalist Welfare Scheme” was launched by the Information & Public Relations Department, Government of Odisha. Under the Scheme, financial assistance is provided to the legal heir of the working journalist in case of his/her death, and in case of permanent incapacitation. In the event of death of a working journalist, a fixed sum of money may be paid to the widow, and in the event of the deceased not being survived by his widow, equally to the minor children. In the event, the deceased was not married or is not survived by his widow or children, such ex-gratia payment may be sanctioned in favour of his father or mother. The eligible applicant, in such case, can apply online for financial assistance from the Information & Public Relations Department.</p>
+        <h3>Eligibility</h3>
+        <p>1. Journalist should be working in Odisha.</p>
+        <p>2. The Journalist should be working for a media house registered with the I&PR department, Odisha.</p>
+        <p>3. The applicant should be a legal heir of the working journalist in case of his/her death or in case of permanent incapacitation.</p>
+        <p>Note: "Permanent Incapacitation" means incapacitation on account of accident, disease, or any other reason which renders the working Journalist wholly unfit for working as such."</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar Card</p>
+        <p>2. Photograph</p>
+        <p>3. Income Certificate</p>
+        <p>4. Copy of accreditation card for accredited journalist</p>
+        <p>5. Death Certificate (If applicable)</p>
+        <p>6. Legal heir certificate (If applicable)</p>
+        <p>7. Media card Copy</p>
+        <p>8. Upload the Bank Passbook Front Page</p>
+        <p>9. Any other documents, as required</p>
+        <h3>Benefits</h3>
+        <p>1. Under the scheme, an ex-gratia of ₹4,00,000/-  is provided to the legal heir of the working journalist in case of his/her death and ₹2,00,000/- in case of permanent incapacitation.</p>
+        <p> Register Here: <a href="https://owjws.odisha.gov.in/about-us" target="_blank" style="font-size: 18px;">https://owjws.odisha.gov.in/about-us</a></p>
+        </div>
+        </div>
+        <!-- Scheme 7-->
+    <div class="scheme-compartment" onclick="toggleDetails('details7')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Merit Based Award and Recognition Of High Performance In The Board Exams Of SSC And HSSC In The State Of Goa</h2>
+        Goa
+        <div class="details" id="details7">
+        <p>The Department of Tribal Welfare, Government of Goa is implementing a scheme titled ‘Merit-Based Award and Recognition of High Performance in the Board exams of SSC and HSSC in the state of Goa’ for Scheduled Tribe Students. The objective of this scheme is to motivate students by giving Merit Based Award on the benchmark of performance and to provide financial incentives to high-performing students who are economically weak. Any Scheduled Caste student who has passed Class 10th and Class 12th, securing 50% and above marks will be given a financial award. The scheme aims to increase the representation of the ST Community in the High-Rank holders are very few in the Class 10th and Class 12th.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be from a Scheduled Tribe (ST) in the State of Goa.</p>
+        <p>2. The applicant should have secured 50% or above marks in the SSC/ HSSC Board exams.</p>
+        <p>3. (For Merit Based Award) The annual income of the family of the applicant should be less than ₹ 5,00,000/-.</p>
+        <h3>Documents Required</h3>
+        <p>1. Copy of Caste Certificate Issued by Competent Authority.</p>
+        <p>2. Copy of Income Certificate Issued by Competent Authority.</p>
+        <p>3. Copy of Mark Sheet.</p>
+        <p>4. Receipt of Fees Paid.</p>
+        <p>5. Copy of Bank Pass Book.</p>
+        <p>6. Copy of Aadhar Card Along With Consent Form.</p>
+        <h3>Benefits</h3>
+        <p>1. Felicitation of Rank Holders Students:</p>
+        <li>₹ 20,000/- to the First Five Rank Holders (separately for all the streams of Science, Commerce, Arts and Vocational).</li>
+        <li>A certificate of Appreciation will be given at the time of felicitation in the public function.</li>
+        <p>2. Merit-Based Awards:</p>
+        <li>₹ 5,000 awarded to the students who have scored 50% to 59.99% marks.</li>
+        <li>₹ 8,000/- awarded to the students who have scored 60% to 60.99% marks.</li>
+        <li>₹ 10,000/- awarded to the students who have scored 70% to 74.99% marks.</li>
+        <li>₹ 15,000/- awarded to the students who have scored 75% & above marks.</li>
+        <p> Register Here: <a href="http://schemesdtw.goa.gov.in/" target="_blank" style="font-size: 18px;">http://schemesdtw.goa.gov.in/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 8-->
+    <div class="scheme-compartment" onclick="toggleDetails('details8')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Fee Waiver Scheme For SC/ST Students Pursuing Higher Education</h2>
+        Goa
+        <div class="details" id="details8">
+        <p>"Fee Waiver Scheme for SC/ST Students Pursuing Higher Education" is a Fee Waiver Scheme by the Department of Education, Art & Culture, Government of Goa. This Scheme is framed in order to provide free access to every SC/ST student, to the institutions of higher learning. It shall be the endeavour of the Government to see that no eligible SC/ST students are deprived of higher education for want of resources. The Scheme is operated by Directorate of Higher Education for the students pursuing the courses of General Education and by Directorate of Technical Education for students pursuing Technical Education at the degree and post graduate level.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should have been born in Goa or resident of Goa for at least last fifteen years.</p>
+        <p>2. The applicant should have passed his/her qualifying examination from any of the institutions located in Goa.</p>
+        <p>3. The applicant should belong to the SC/ST Community of Goa.</p>
+        <p>4. The applicant should be enrolled for the First Year of their Degree/PG Courses.</p>
+        <h3>Documents Required</h3>
+        <p>1. Proof of Identity.</p>
+        <p>2. Caste Certificate.</p>
+        <p>3. Proof of Educational Qualification.</p>
+        <p>4. Proof of Enrolment into the First Year of Degree/PG Course.</p>
+        <p>5. Birth Certificate / Residential Certificate.</p>
+        <p>6. Fee Receipt of the Current Course Year.</p>
+        <h3>Benefits</h3>
+        <p>1. A full waiver of the fees supposed to have been paid by them in the institutions where they have sought admissions. </p>
+        <p>2. The amount fee waiver shall consist of Tuition fees, Library fees, Laboratory fees and Development fees, if any.</p>
+        <p>Note: All other charges and fees would be borne by the concerned student.</p>
+        <p> guideliness to  apply scheme: <a href="https://www.goa.gov.in/wp-content/uploads/2019/10/Dayanand-Bandodkar-Scheme-for-Orphans.pdf" target="_blank" style="font-size: 18px;">https://www.goa.gov.in/wp-content/uploads/2019/10/Dayanand-Bandodkar-Scheme-for-Orphans.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 9-->
+    <div class="scheme-compartment" onclick="toggleDetails('details9')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Post Matric Scholarship For Scheduled Caste</h2>
+        Punjab
+        <div class="details" id="details9">
+        <p>The objective of the scheme is to provide financial assistance to the Scheduled Caste students studying at post matriculation or post-secondary stage to enable them to complete their education. Scholarships will be paid to the students whose parents/guardians' income from all sources does not exceed Rs. 2,50,000/- (Rupees two lakh, fifty thousand only) per annum.</p>
+        <h3>Eligibility</h3>
+        <p>1. The scholarships are open to the Nationals of India only.</p>
+        <p>2. Only those candidates who belong to Scheduled Castes so specified about the State/Union Territory to which the applicant belongs /domiciled as determined by the State/UT and who have passed the Matriculation or Higher Secondary or any higher examination of a recognized University or Board of Secondary Education will be eligible.</p>
+        <p>3. Scholarships will be paid to the students whose parent's/guardian's income from all sources does not exceed Rs. 2,50,000/- (Rupees Two lakh Fifty thousand only) during the last Financial Year. An income certificate is required to be taken once only i.e. at the time of admission only to courses which are continuing for more than one year. The income certificate shall be issued by the Authority as decided by the State Government.</p>
+        <p>4. The ceiling on age limit for admission as regular students in different classes should be decided by the concerned Institutions.</p>
+        <p>5. Candidates who, after passing one stage of education are studying in the same stage of education in a different subject e.g. Intermediate Science after Intermediate Arts or B.Com after B.A. or M.A. in one subject after M.A. in other subjects will not be eligible.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhar card.</p>
+        <p>2. Permanent address/Resident proof.</p>
+        <p>3. Previous your academic mark sheet.</p>
+        <p>4. Admission proof.</p>
+        <p>5. Passport-size photograph (3 copies).</p>
+        <p>6. Bank passbook.</p>
+        <h3>Benefits</h3>
+        <p>1. Compulsory non-refundable fees including tuition fees, as fixed by the Fee Fixation/Rationalization Committee of the State Government.</p>
+        <p> Register Here: <a href="https://www.scholarships.punjab.gov.in/" target="_blank" style="font-size: 16px;">https://www.scholarships.punjab.gov.in/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 10-->
+    <div class="scheme-compartment" onclick="toggleDetails('details10')">
+        <img src="" alt="" class="scheme-image">
+        <h2>The Artist Welfare Fund Of Assam</h2>
+        Assam
+        <div class="details" id="details10">
+        <p>The scheme "The Artist Welfare Fund of Assam" is a scheme of financial asssistance by the Assam State Film (Finance and Development) Corporation, Department of Cultural Affairs, Govt. of Assam. The scheme extednds to the whole of Assam. </p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant must be and artist in the field of art and culture of the State.</p>
+        <p>2. The applicant must be above the age of 20 years (in case of applicant being the artist).</p>
+        <p>3. The applicant should be in distress.</p>
+        <p>4. The applicant should have a made a mark or made some achievement in the field of art and culture.</p>
+        <p>5. The applicant should be able to provide artistic credentials supporting his/her achievement</p>
+        <h3>Documents Required</h3>
+        <p>1. A Recent (not older than six months) Clear & Colored Passport Sized Photograph</p>
+        <p>2. Aadhaar Card</p>
+        <p>3. Proof of Identity</p>
+        <p>4. Proof of Residence of Assam (any one of the following): Passport; Driving License; Electricity Bill; Landline Telephone or Broadband Connection Bill; Water Bill; Consumer Gas Connection Card or Book or Piped Gas Bill; Bank Account Statement; Domicile Certificate Issued by the Government; Passport of the Spouse; Post Office Pass Book Having Address of the Applicant; Property Registration Document; Elector’s Photo Identity Card.</p>
+        <p>5. Proof of Age / DOB (any one of the following): Aadhaar Card issued by UIDAI; PAN Card; Elector’s photo identity card; Passport; Driving License; Birth Certificate issued by the Municipal Authority or any office authorized to issue Birth and Death Certificate by the Registrar of Birth and Deaths; Marriage certificate issued by Registrar of Marriages; Matriculation/10thclass certificate or mark sheet of recognized Board.</p>
+        <h3>Benefits</h3>
+        <p>1. Cancer: ₹ 50,000.00</p>
+        <p>2. Kidney Transplant or Total Kidney Failure: ₹ 50,000.00</p>
+        <p>3. Heart Pacemaker / Bypass: ₹ 20,000.00</p>
+        <p>4. Death: To be decided by the Board</p>
+        <p>5. Disability due to Accident: To be decided by the Board</p>
+        <p> guideliness to apply scheme: <a href="https://filmfinance.assam.gov.in/sites/default/files/swf_utility_folder/departments/asffdc_medhassu_in_oid_10/how_do_i/level_1/Regulation%20of%20Artist%20Welfare%20fund.pdf" target="_blank" style="font-size: 16px;">https://filmfinance.assam.gov.in/sites/default/files/swf_utility_folder/departments/asffdc_medhassu_in_oid_10/how_do_i/level_1/Regulation%20of%20Artist%20Welfare%20fund.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 11-->
+    <div class="scheme-compartment" onclick="toggleDetails('details11')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Spectacle Grant (Sainik Welfare)</h2>
+        Puducherry
+        <div class="details" id="details11">
+        <p>"Spectacle Grant" is a Welfare Scheme by the Armed Forces Flag Day Fund of the Department of Sainik Welfare, Puducherry. Through this scheme, ₹2,000/- to the Ex-servicemen/Widows of Ex-servicemen for the purchase of Spectacle. The members of the Ex-Servicemen Contributory Health Scheme (ECHS) are not eligible. The applications are accepted offline.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be an Ex-serviceman/Widow of an Ex-serviceman.</p>
+        <p>2. The applicant should be registered with the Department of Sainik Welfare, Puducherry</p>
+        <p>3. The applicant should not be a member of the Ex-Servicemen Contributory Health Scheme (ECHS).</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity Card of the ESM/ Widow of ESM.</p>
+        <p>2. Discharge Certificate of ESM.</p>
+        <p>3. Prescription of Doctor (Original).</p>
+        <p>4. Bill for the Purchase (Original).</p>
+        <p>5. Decleration</p>
+        <h3>Benefits</h3>
+        <p>1. Financial Assistance of ₹2,000/-, for the purchase of Spectacle.</p>
+        <p>2. The amount is credited to the beneficiary’s Bank Account through RTGS/ NEFT.</p>
+        <p> Register Here: <a href="https://sainik.py.gov.in/assistance-affd-fund" target="_blank" style="font-size: 18px;">https://sainik.py.gov.in/assistance-affd-fund</a></p>
+        </div>
+        </div>
+        <!-- Scheme 12-->
+    <div class="scheme-compartment" onclick="toggleDetails('details12')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Anganwadi Workers Welfare Fund</h2>
+        Uttarakhand
+        <div class="details" id="details12">
+        <p>Anganwadi Workers Welfare Fund” is a social security scheme by the Department of Women Empowerment and Child Development, Government of Uttarakhand. The scheme aims to provides financial assistance to the anganwadi workers/helpers of the state on attaining the age of 60 years.</p>
+        <h3>Eligibility</h3>
+        <p>1. Beneficiary should be an Anganwadi Worker/Helper.</p>
+        <p>2. The age of the beneficiary should be 60 years or more.</p>
+        <p>3. Beneficiary should be a permanent resident of Uttarakhand.</p>
+        <h3>Documents Required</h3>
+        <p>1. Proof of retirement.</p>
+        <p>2. Aadhar card.</p>
+        <p>3. Bank account details.</p>
+        <p>4. Any other document (as requested).</p>
+        <h3>Benefits</h3>
+        <p>1. Minimum amount of ₹30,000 /- will be given.</p>
+        <p>2. After completing 20 years of service  ₹1,30,000/- will be given.</p>
+        <p> guideliness to apply scheme: <a href="https://agriculture.uk.gov.in/files/MERI_YOJANA_book_pdf__04-12-23.pdf" target="_blank" style="font-size: 18px;">https://agriculture.uk.gov.in/files/MERI_YOJANA_book_pdf__04-12-23.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 13-->
+    <div class="scheme-compartment" onclick="toggleDetails('details13')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Student Welfare Scheme</h2>
+        Madhya Pradesh
+        <div class="details" id="details13">
+        <p>The "Student Welfare Scheme" was launched by the Tribal Affairs Department, Government of Madhya Pradesh, with the objective of providing assistance to economically weaker Scheduled Tribe students to meet their emergency needs in special circumstances. Under this scheme, financial assistance is provided to Scheduled Tribe students studying in Class 1 to 10 in cases of urgency or emergency, such as the treatment of special diseases like cancer, TB, and heart diseases. It also covers participation in special events such as art, cultural, intellectual, scientific, and sports activities, the purchase of tricycles for handicapped students, any emergency situation or untimely calamity, and in the event of death.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a student.</p>
+        <p>2. The student should be studying in Class 1 to 10.</p>
+        <p>3. The student should be a native of Madhya Pradesh.</p>
+        <p>4. The student should belong to the Scheduled Tribe category.</p>
+        <p>5. The student should be enrolled in a government or accredited and approved educational institution/school.</p>
+        <p>6. A student who has not received financial support from any other government scheme is eligible for this scheme.</p>
+        <h3>Documents Required</h3>
+        <p>1. Passport-size Photograph</p>
+        <p>2. Aadhaar card</p>
+        <p>3. Domicile certificate of Madhya Pradesh</p>
+        <p>4. Caste certificate</p>
+        <p>5. Income certificate</p>
+        <p>6. Samagra ID</p>
+        <p>7. Previous class passing marksheet</p>
+        <p>8. Bank account details/Bank Passbook</p>
+        <p>9. Other necessary documents if required</p>
+        <h3>Benefits</h3>
+        <p>1. Under this scheme, financial assistance is provided for the following:</p>
+        <li>For participation in special events such as art, cultural, intellectual, and scientific activities: ₹3,000/-</li>
+        <li>For tricycles for disabled students: ₹3,000/-</li>
+        <li>In case of untimely calamity or any emergency situation: ₹25,000/-</li>
+        <li>For special diseases such as cancer, TB, and heart disease, etc.: ₹10,000/-</li>
+        <li>In case of death: ₹25,000</li>
+        <p> guideliness to apply scheme: <a href="https://aiggpa.mp.gov.in/uploads/publication/Social_Protection_Eng.pdf" target="_blank" style="font-size: 18px;">https://aiggpa.mp.gov.in/uploads/publication/Social_Protection_Eng.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 14-->
+    <div class="scheme-compartment" onclick="toggleDetails('details14')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Indian Community Welfare Fund</h2>
+        Ministry Of External Affairs
+        <div class="details" id="details14">
+        <p>A scheme by Ministry of External Affairs (MEA) for the welfare of Overseas Indians; assisting them in distress situations.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant must be an Overseas Indian.</p>
+        <p>2. The applicant must be in a distress situation (as defined under scheme benefits).</p>
+        <h3>Documents Required</h3>
+        <p>1. Death Certificate</p>
+        <p>2. Bank details of the deceased</p>
+        <p>3. Insurance Number of the deceased</p>
+        <p>4. Marriage Certificate (spouse) and Birth Certificate (of children)</p>
+        <p>5. Original Passport of the deceased along with a photocopy</p>
+        <p>6. Power of attorney from next-of-kin in the name of Embassy or any individual residing in Austria whom the deceased’s family would like to appoint. </p>
+        <p>7. Legal Heir Certificate, to be obtained by the next-of-kin through the concerned Taluk/Thasildar or through the District Civil Court of the concerned area in India. </p>
+        <p>8. Any other document that seem relevant depending upon the death case, such as police report (from the local police), medical report (from the hospital)</p>
+        <p>9. NOC from other Heirs (in case of multiple heirs)</p>
+        <h3>Benefits</h3>
+        <p>1. Assisting Overseas Indian nationals in distress situations:</p>
+        <li>Transportation of Mortal Remains and expenditure on incidentals of deceased Indian national to India or local cremation/burial of deceased in such cases where the employer, sponsor or insurance company is unable or unwilling to do so as per the contract and the family is unable to meet the cost.</li>
+        <li>Boarding and lodging for deserving distressed Indian nationals abroad on a means tested basis in budget category or shelters run by Mission/Post or NGOs empanelled with Mission.</li>
+        <li>Air passage to India to stranded Overseas Indian nationals</li>
+        <li>Legal Assistance on a means tested basis to deserving overseas Indian nationals who have committed minor crimes, offences or have been falsely implicated by their employer and put in jails; fishermen/seamen/sailors/Indian students in distress;</li>
+        <li>Payment for small fines and penalties in respect of Indian nationals for minor offences/crimes; for illegal stay in the host country where prima facie the worker is not at fault, and to enable release of Indian nationals from jail/detention center</li>
+        <p> guideliness to apply scheme: <a href="https://www.mea.gov.in/icwf.htm" target="_blank" style="font-size: 18px;"></a>https://www.mea.gov.in/icwf.htm</p>
+        </div>
+        </div>
+        <!-- Scheme 15-->
+    <div class="scheme-compartment" onclick="toggleDetails('details15')">
+        <img src="" alt="" class="scheme-image">
+        <h2>State Welfare Scheme For Purohits</h2>
+        West Bengal
+        <div class="details" id="details15">
+        <p>The scheme “State Welfare Scheme for Purohits” was launched by the Department of Information & Cultural Affairs, West Bengal in September 2020 to benefit the financially distressed practicing temple /tribal purohit or priests of other communities like Christians, Jain, and Buddhists.</p>
+        <h3>Eligibility</h3>
+        <p>1. All the poor Purohits or poor priests of other communities like Christians, Jains, Buddhists, and Parsis in the State will be eligible under the scheme.</p>
+        <p>2. The person is a resident of West Bengal on the date of making an application under the Scheme.</p>
+        <p>3. The person is not a beneficiary under any other Social Security pension scheme or a recipient of Government pension or pension from any other organization.</p>
+        <p>4. For receiving a housing grant, the person does not have a pucca dwelling house of his or her own but if he or she shall have a piece of land in his name. In case the beneficiary does not own land for the construction of the dwelling house, the State Government will mobilize vested and other lands whenever possible for providing housing facilities to such families.</p>
+        <p>5. The applicant must be a financially distressed /economically backward practicing priest attached to any place of worship.</p>
+        <h3>Documents Required</h3>
+        <p>1. Passport Photograph</p>
+        <p>2. Copy of Digital Ration Card</p>
+        <p>3. Copy of Aadhaar Card, if available</p>
+        <p>4. Copy of Voter Id</p>
+        <p>5. Copy of Residential Certificate (Self Declaration)</p>
+        <p>6. Copy of Bank Pass Book</p>
+        <p>7. Copy of Khatian (ROR)/ Dee</p>
+        <h3>Benefits</h3>
+        <p>1. Monthly Financial Assistance for all the poor Purohits and poor priests of other communities like Christians, Jains, Buddhists & Parsis of ₹1,000/- per month.</p>
+        <p>2. A grant of ₹1,20,000/- will be provided to each poor Purohit/poor priest of other communities like Christians/ Jains/ Buddhists / Parsis for the construction of a dwelling house.</p>
+        <p> Register Here: <a href="https://howrah.gov.in/information-cultural-affairs/" target="_blank" style="font-size: 18px;">https://howrah.gov.in/information-cultural-affairs/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 16-->
+    <div class="scheme-compartment" onclick="toggleDetails('details16')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Festival Gift Coupons (Sainik Welfare)</h2>
+        Puducherry
+        <div class="details" id="details16">
+        <p>The scheme "Festival Gift Coupons" is a Welfare Scheme by the Armed Forces Flag Day Fund of the Department of Sainik Welfare, Puducherry. The objective of the scheme is to provide Festival Gift Coupons worth ₹4,000/- per annum to the Non-Pensioner ESMs who are 60 years or older in age. To coupons are to be collected in person on intimation from DSW, normally between November and January. This scheme applies only to the Ex-servicemen/Widows of Ex-servicemen registered with the Department of Sainik Welfare, Puducherry. The applications are accepted offline. </p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be an Ex-Serviceman or the Widow of an Ex-Serviceman.</p>
+        <p>2. The Ex-Serviceman should be registered with the Department of Sainik Welfare, Puducherry.</p>
+        <p>3. The Ex-Serviceman should be a Non-Pensioner.</p>
+        <p>4. The Ex-Serviceman should be 60 years or older in age, as on 31st March of the current year (No age bar for Widow of an Ex-Servicemen).</p>
+        <p>5. The scope of this scheme will also apply to those ESM / living spouse/widows who are re-employed as regular / deemed to be regular in Government/Public Sector Undertakings/Private Organizations and self-employed IT assesses.</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity Card of the ESM / Widow of the ESM</p>
+        <p>2. Recent Passport-size Photograph.</p>
+        <h3>Benefits</h3>
+        <p>1. Festival Gift Coupons worth ₹4,000/- per annum.</p>
+        <p>*The coupons are to be collected in person on intimation from DSW, normally between November and January. </p>
+        <p> Guidelines to Apply Scheme: <a href="https://sainik.py.gov.in/sites/default/files/g.o.ms.22-dated-24-feb-2020.pdf" target="_blank" style="font-size: 18px;">https://sainik.py.gov.in/sites/default/files/g.o.ms.22-dated-24-feb-2020.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 17-->
+    <div class="scheme-compartment" onclick="toggleDetails('details17')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Bihar Shatabdi Leper Welfare Scheme</h2>
+        Bihar
+        <div class="details" id="details17">
+        <p>The "Bihar Shatabdi Leper Welfare Scheme" was launched by the Social Welfare Department, Government of Bihar. Under this scheme, financial assistance of ₹1,500/- per month is given to leprosy patients with Visible Deformities Grade-II in the state. The state government fully funds this scheme.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a resident of Bihar.</p>
+        <p>2. The applicant should be a leprosy patient with Visible Deformities Grade-II.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar card of the applicant</p>
+        <p>2. Passport-size photograph</p>
+        <p>3. Identity proof i.e. Voter ID Card, Driving License</p>
+        <p>4. Medical reports/documents related to Visible Deformities Grade –II</p>
+        <p>5. Address proof</p>
+        <p>6. Bank Passbook/Bank account details</p>
+        <p>7. Any other documents as required</p>
+        <h3>Benefits</h3>
+        <p>1. Under this scheme, financial assistance of ₹1,500/- per month is given to leprosy patients with Visible Deformities Grade-II.</p>
+        <p> Register Here: <a href="https://state.bihar.gov.in/socialwelfare/CitizenHome.html" target="_blank" style="font-size: 18px;">https://state.bihar.gov.in/socialwelfare/CitizenHome.html</a></p>
+        </div>
+        </div>
+        <!-- Scheme 18-->
+    <div class="scheme-compartment" onclick="toggleDetails('details18')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Hearing Aid Grant (Sainik Welfare)</h2>
+       Puducherry 
+        <div class="details" id="details18">
+        <p>Hearing Aid Grant" is a Welfare Scheme by the Armed Forces Flag Day Fund of the Department of Sainik Welfare, Puducherry. Through this scheme, ₹8,000/- is provided for the purchase of Hearing Aid to the Ex-servicemen/Widows of Ex-servicemen registered with the Department. The members of the Ex-Servicemen Contributory Health Scheme (ECHS) are not eligible. The applications are accepted offline.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be an Ex-serviceman/Widow of an Ex-serviceman.</p>
+        <p>2. The applicant should be registered with the Department of Sainik Welfare, Puducherry.</p>
+        <p>3. The applicant should not be a member of the Ex-Servicemen Contributory Health Scheme (ECHS).</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity Card of the ESM/ Widow of ESM.</p>
+        <p>2. Discharge Certificate of Ex-Serviceman.</p>
+        <p>3. Prescription of Doctor (Original).</p>
+        <p>4. Bill of the Purchase (Original).</p>
+        <p>5. Declaration by the ESM/ Widow of ESM.</p>
+        <h3>Benefits</h3>
+        <p>1. Financial Assistance of ₹8,000/-, for the purchase of Hearing Aid.</p>
+        <p>2. The amount is credited to the beneficiary’s Bank Account through RTGS/ NEF</p>
+        <p> guideliness to Apply Scheme: <a href="https://sainik.py.gov.in/assistance-affd-fund" target="_blank" style="font-size: 18px;">https://sainik.py.gov.in/assistance-affd-fund</a></p>
+        </div>
+        </div>
+        <!-- Scheme 19-->
+    <div class="scheme-compartment" onclick="toggleDetails('details19')">
+        <img src="" alt="" class="scheme-image">
+        <h2>West Bengal Migrant Workers’ Welfare Scheme: Cremation</h2>
+        West Bengal
+        <div class="details" id="details19">
+        <p>West Bengal Migrant Workers’ Welfare Scheme: Cremation" is a social welfare scheme implemented by the West Bengal Migrant Workers’ Welfare Board, Labour Department, Government of West Bengal on 25th April, 2023. Under this scheme, if a registered Migrant Worker dies at his / her work place or the place he /she had to stay for the purpose of his / her job, an assistance amounting to ₹ 3,000/- will be provided to the nominee of the worker for cremation at the place, the worker was employed.</p>
+        <h3>Eligibility</h3>
+        <p>1. For registration as a Migrant Worker:</p>
+        <li>The applicant must be a resident of West Bengal.</li>
+        <li>The applicant’s age should be between 18-60 years.</li>
+        <li>The applicant must be ordinarily a worker who is employed/ likely to be employed in any State/Union Territories other than the state of West Bengal/ Outside India.</li>
+        <p>2. For the application of Welfare Scheme:</p>
+        <li>The beneficiary should be a nominee i.e., a person nominated by the registered Migrant Worker from his/ her family.</li>
+        <li>The migrant worker should have lost his/ her life due to death during the course of employment at his/ her work place or the place he/ she had to stay for the purpose of the job.</li>
+        <h3>Documents Required</h3>
+        <p>1. Photo (max Size 50 KB, jpg or jpeg file only),</p>
+        <p>2. Aadhar card (Upload document both sides in a single page) (max size 150 KB, pdf file only)</p>
+        <p>3. First page of bank account particulars (max size 150 KB, pdf file only)</p>
+        <p>4. Employment related certificate.</p>
+        <p>5. Any other documents as required.</p>
+        <h3>Benefits</h3>
+        <p>1. ₹ 3,000/- to the nominee of the registered Migrant Worker.</p>
+        <p>Guidelines to Apply Scheme: <a href="https://karmasathips.wblabour.gov.in/sites/default/files/static/migrant_worker_scheme.pdf" target="_blank" style="font-size: 18px;">https://karmasathips.wblabour.gov.in/sites/default/files/static/migrant_worker_scheme.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 20-->
+    <div class="scheme-compartment" onclick="toggleDetails('details20')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Bicycle Scheme- Haryana Labour Welfare Board</h2>
+        Harayana
+        <div class="details" id="details20">
+        <p>The scheme “Bicycle Scheme” is implemented by the Haryana Labour Welfare Board (HLWB), Labour Department, Government of Haryana. Under this scheme, financial assistance of ₹5,000/- is provided to the workers employed in the industrial and commercial establishments of the state of Haryana for the p</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be employed in an industrial or commercial establishment in Haryana.</p>
+        <p>2. The worker should be registered with the Haryana Labour Welfare Board.</p>
+        <p>3. The monthly salary of the worker should not exceed ₹18,000/-.</p>
+        <p>4. The worker will get the benefit after every five years in the whole service period.</p>
+        <p>5. The service period of the worker is fixed for 2 years.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar Card</p>
+        <p>2. Passport-size photograph</p>
+        <p>3. Parivar Pehchan Patra (Family ID)</p>
+        <p>4. Bank account details</p>
+        <p>5. Proof of residence</p>
+        <p>6. Ration Card</p>
+        <p>7. Caste Certificate (If applicable)</p>
+        <p>8. Proof of age</p>
+        <p>9. Disability certificate (If applicable)</p>
+        <p>10. Any other documents as required</p> 
+        <h3>Benefits</h3>
+        <p>1. Under this scheme, financial assistance of ₹5,000/- is provided to the workers for the purchase of a new bicycle once in every five years.</p>
+        <p> Register Here: <a href="https://hrylabour.gov.in/welfare/users/schemeDetailFront/78" target="_blank" style="font-size: 18px;">https://hrylabour.gov.in/welfare/users/schemeDetailFront/78</a></p>
+        </div>
+        </div>
+    <script>
+    function toggleDetails(id) {
+     const details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+     details.style.display = "block";
+      } else {
+      details.style.display = "none";
+     }
+      }
+  </script>
+<script>
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+}
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
+</script>
+</script>
+</body>
+</html>

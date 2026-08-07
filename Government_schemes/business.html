@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busines</title>
+    <style>
+        body {
+            background: #f9f9f9;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+           
+        }
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 100; 
+    
+}
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .scheme-header-image {
+            width: 100%;
+            max-width: 1600px;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 9px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 5%; 
+            transform: translate(0, -50%); 
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(28, 85, 230);
+           
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .scheme-compartment {
+            font-family: cambria;
+            font-size: 17px;
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            background: white;
+            color: rgb(5, 5, 5);
+            transition: 0.3s ease, box-shadow 0.3s ease;
+            background-size: cover; 
+            background-position: center; 
+            background-color: rgb(187, 195, 249);
+            background-repeat: no-repeat;
+        }
+
+        .scheme-compartment:hover{
+            color: black;
+            box-shadow: 0 0 20px 10px rgba(11, 11, 11, 0.1);
+        }
+
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .details h3 {
+            margin-left: 20px;
+        }
+
+        .benefits, .eligibility, .documents-required {
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        div {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .scheme-image {
+            float: left;
+            margin-left: 5px;
+            margin-top: -20px;
+            max-width: 110px;
+            height:110px;
+            border-radius: 8px;
+        }
+        .scheme-name {
+            flex-grow: 1; 
+        }
+    </style>
+    <body>
+    <div class="image-container">
+        <img src="Business.webp" alt="Business & Entrepreneurship" class="scheme-header-image">
+        <div class="overlay-text"> Business & <br> Entrepreneurship</div>
+    </div>
+    <!-- Scheme 1 -->
+    <div class="scheme-compartment" onclick="toggleDetails('details1')">
+    <img src="" alt="" class="scheme-image">
+    <h2>Jeevanam Self-Employment Scheme To Dependents Of Crime Victims</h2>
+    Kerala
+    <div class="details" id="details1">
+    <p>The scheme “Jeevanam Self-Employment Scheme to Dependents of Crime Victims” was launched by the Department of Social Justice, Government of Kerala. As part of strengthening the victim support services in the State, the Government of Kerala has started this scheme which provides financial aid to dependents as well as victims of crime. The assistance would benefit those who were struggling to make a living, including dependents of the victims of the crime and those with serious injuries. </p>
+    <h3>Eligibility</h3>
+    <p>1. The applicant should be a native and resident of Kerala State.</p>
+    <p>2. The applicant must be either the person who has been seriously injured in a crime or must be a dependent - Wife/Husband/Unmarried son or daughter of the victim of the crime.</p>
+    <p>5. The annual income of the family should not exceed ₹1,00,000/-.</p>
+    <p>6. The annual income of the family should not exceed ₹1,00,000/-.</p>
+    <h3>Document Required</h3>
+    <p>1. Copy of Aadhaar card</p>
+    <p>2. Mobile number</p>
+    <p>3. Email id</p>
+    <p>4. Passport Size Photo</p>
+    <p>5. Copy of Ration Card (Submit the page containing the name of the ration card</p>
+    <p>6. holder and the page containing the family members together)</p>
+    <p>7. Project proposal of the proposed work/business</p>
+    <p>8. Income Certificate</p>
+    <p>9. Copy of FIR</p>
+    <p>10. Copy of Bank Passbook- Bank account details</p>
+    <p>11. Other documents, if any</p>
+    <p>Register here: <a href="https://sjd.kerala.gov.in/scheme-info.php?scheme_id=MTcyc1Y4dXFSI3Z5" target="_blank" style="font-size: 16px;">https://sjd.kerala.gov.in/scheme-info.php?scheme_id=MTcyc1Y4dXFSI3Z5</a></p>
+    </div>
+    </div>
+    <!-- Scheme 2 -->
+    <div class="scheme-compartment" onclick="toggleDetails('details2')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Reimbursement of Stamp Duty and Registration Charges</h2>
+        Tamil Nadu
+        <div class="details" id="details2">
+        <p>The scheme "Reimbursement of Stamp Duty and Registration Charges" by the Micro Small and Medium Enterprises Department, Government of Tamil Nadu, is introduced with the objective of reducing the stamp duty and registration charges incurred by MSEs investing in backward blocks, i.e. the charges paid to the Registration department on the purchase of land meant for industrial use.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a manufacturing enterprise (micro or small scale), set up in the declared backward blocks of the state of Tamil Nadu.</p>
+        <p>2. This incentive is admissible to eligible enterprises on the land area up to five times the plinth area of the factory building constructed.</p>
+        <p>3. However, in respect of enterprises where the open land requirements would be large, due to the peculiar nature of the industry, the sanctioning Authority may consider allowing land in excess of five times the plinth area on case to case basis.</p>
+        <h3>Documents Required</h3>
+        <p>1. Copy of UDYAM Registration Certificate.</p>
+        <p>2.Copy of Registered Land Sale deed documents with receipt from Registrar regarding the payment of Stamp</p>
+        <p>3.Duty/Registration Charges.</p>
+        <p>4.Copy of plan Approvals from the local body / Industrial Estate Authorities along with site plan.</p>
+        <p>5.The file type should be PDF (.pdf). The file size should be less than 200 kb.</p>
+        <h3>Benefits</h3>
+        <p>1. 50% reimbursement of stamp duty and Registration charges paid to the Registration department on the purchase of land meant for industrial use.</p>
+        <p>Register here: <a href="https://www.msmeonline.tn.gov.in/" target="_blank" style="font-size: 16px;">https://www.msmeonline.tn.gov.in/</a></p>
+        </div>
+    </div>
+    <!-- Scheme 3-->
+    <div class="scheme-compartment" onclick="toggleDetails('details3')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Promotion of Energy Audit and Conservation of Energy (PEACE): Incentive for Implementing Energy Audit Recommendations</h2>
+        Tamil Nadu
+        <div class="details" id="details3">
+        <p>"Promotion of Energy Audit and Conservation of Energy (PEACE)" is a scheme by the Micro Small and Medium Enterprises Department, Government of Tamil Nadu. The scheme comprises four main components: Awareness Programme; Training Programme; Detailed Energy Audit; and Implementation of Energy Audit Recommendations. The "Incentive for lmplementing Energy Audit Recommendations" component of this scheme is introduced to incentivise MSMEs to implement the recommendations of the Energy Audit Report and to optimize energy consumption leading to energy saving and money savings in electricity bills.</p>
+        <h3>Eligibility</h3>
+        <p>1. All manufacturing MSMEs in the state which have undertaken energy audits arid have achieved at least 10% energy savings in terms of the number of units of energy consumed per unit of product manufactured with reference to the last 12 months average.</p>
+        <p>2. Enterprises having more than one unit may also avail of this concession, separately for each unit.</p>
+        <p>3. There should be a gap of a minimum of three years between the previous energy audit and the subsequent energy audit i.e. present energy audit.</p>
+        <p>*Note: The percentage of savings in specific energy consumption (Kwh/Kcal per unit of product) shall be reckoned on twelve-month average energy consumption before the implementation of energy audit recommendations and a minimum three-month average after the implementation of the recommendation of the energy audit. </p>
+        <h3>Documents Required</h3>
+        <p>1. Copy of Udyog Aadhaar Memorandum / Copy of Udyam Certificate.</p>
+        <p>2. Certificate of Registration under Indian Partnership Act / LLP / Societies Registration Act / Certificate of Incorporation [Memorandum of Association & Article of Association] under Company Act.</p>
+        <p>3. Proof for Connected Load i.e., EB Meter Card/Online Statement.</p>
+        <p>4. If Alternate Source of Energy [other than Electricity] Used, Proof for the Usage.</p>
+        <p>5. Documents for Engagement of Energy Auditor/Letter of Acceptance from Energy Auditor.</p>
+        <p>6. If the Energy Auditor is Employed in a Firm/Co., or Partner or Director of a Firm/Co., Then Proof for the Same.</p>
+        <p>7. Copy of Accreditation of Energy Auditor by Bureau of Energy Efficiency [BEE].</p>
+        <p>8. Self-Certified Statement on Expenditure Incurred for Energy Audit with Copy of the Bills/Vouchers and Receipt, etc.</p>
+        <p>9. Copy of the Detailed Energy Audit Report.</p>
+        <p>*Note: The file type should be PDF (.pdf). The file size should be less than 200 kb.</p>
+        <h3>benefits</h3>
+        <p>1. 50% of the cost of eligible components, subject to a maximum limit of ₹ 10,00,000/ -.</p>
+        <p>2. Investments made after the energy audit alone will be eligible for the subsidy.</p>
+        <p>*Note: The overall ceiling on subsidy should not be applied for the original energy audit and subsequent energy audit taken together but should be applied separately for the original energy audit and the subsequent energy audit.</p>    
+        <p> Register Here: <a href="https://www.msmeonline.tn.gov.in/" target="_blank" style="font-size: 16px;">https://www.msmeonline.tn.gov.in/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 4-->
+        <div class="scheme-compartment" onclick="toggleDetails('details4')">
+            <img src="" alt="" class="scheme-image">
+             <h2>Production Linked Incentive Scheme For Automobile And Auto Component Industry</h2>
+             Ministry of Heavy Industries
+            <div class="details" id="details4">
+            <p>The government of India has approved the scheme “Production Linked Incentive Scheme for Automobile and Auto Components Industry” in India to enhance India’s Manufacturing Capabilities for Advanced Automotive Products. The “Production Linked Incentive Scheme for Automobile and Auto Components Industry” proposes financial incentives to boost domestic manufacturing of Advanced Automotive Technology products and attract investments in the automotive manufacturing value chain. Its prime objectives include overcoming cost disabilities, creating economies of scale, and building a robust supply chain in areas of Advanced Automotive Technology products. It will also generate employment. This scheme will facilitate the Automobile Industry to move up the value chain into higher value-added products.</p>
+            <h3>Eligibility</h3>
+            <p>1. The applicant company or its Group company(ies) will need to meet the following common criteria to qualify and receive benefits under the Scheme:</p>
+            <p>2. For a company or its Group company(ies) with an existing presence in India or globally in the Automotive vehicle and components manufacturing business:</p>
+            <p>3. An applicant company or its Group company(ies) must satisfy the entire eligibility criteria to be eligible under the scheme.</p>
+            <p>4. Non-Automotive companies or its Group company(ies) can qualify for this scheme provided they present a clear business plan to invest in India and generate revenues from Advanced Automotive Technology vehicles or Advanced Automotive Technology components manufacturing.</p>
+            <p>5. The applicant's new Non-Automotive Investor company or its Group company(ies) will be eligible to claim incentive subject to meeting the cumulative minimum new domestic investment to be achieved for a particular year. The applicant will also have to meet the % Year-on-Year growth criteria from the minimum threshold fixed from the first year.</p>
+            <h3>Documents required</h3>
+            <p>1. Certificate of Incorporation (Issued by ROC)</p>
+            <p>2. Memorandum & Articles of Association (Submitted to ROC)</p>
+            <p>3. PAN Card</p>
+            <p>4. Import Export Code (IEC) Registration Certificate</p>
+            <p>5. Letter of Authorization by Board of Directors or Managing Director or Equivalent (incl. subsidiary(ies)) </p>
+            <p>6. Certificate from the Company Secretary of the Applicant / Managing Director for Credit History (incl. subsidiary(ies))</p>
+            <p>7.CIBIL Report of the Company (incl. subsidiary(ies))</p>
+            <p>8.Business Profile/ Corporate Presentation of the Applicant (incl. subsidiary(ies))</p>
+            <p> 9GST Registration Certificate (incl. subsidiary(ies))</p>
+            <p>10.Shareholding Pattern (Latest submitted with ROC and certified by the Company Secretary of the company or in case the applicant is not having any 'Company Secretary' - by the Managing Director) (incl. subsidiary(ies))</p>
+            <p>11.Profile of Directors</p>
+            <p>12.Annual Report of Holding Company</p>
+            <p>13Self-Certification on Revenue/ Investment/ Net worth from each of the Group Company (ies) whose credentials have been considered</p>
+            <p>14.Financial Details of Subsidiary(ies)</p>
+            <p>15.Project Report/ Business Plan (incl. for Subsidiary(ies))</p>
+            <p>16.Application Fee Payment Proof</p>
+            <h3>benefits</h3>
+            <p>1.Incentive Slabs for Champion OEM and New Non-Automotive (OEM) Investor company:</p>
+            <p>2. ncentive slab for Component Champion and New Non-Automotive (Component) Investor Company:</p>
+            <p>*Note: The overall ceiling on subsidy should not be applied for the original energy audit and subsequent energy audit taken together but should be applied separately for the original energy audit and the subsequent energy audit.</p></p>
+            <p> Register Here: <a href="https://pliauto.in/login" target="_blank" style="font-size: 16px;">https://pliauto.in/login</a></p>
+            </div>
+            </div>
+        <!-- Scheme 5-->
+        <div class="scheme-compartment" onclick="toggleDetails('details5')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Asangathit Karmakaar Silai Machine Sahayata Yojana</h2>
+        Chhattisgarh
+        <div class="details" id="details5">
+        <p>The Asangathit Karmakaar Silai Machine Sahayata Yojana (Unorganized Workers Sewing Machine Assistance Scheme) is a government scheme in Chhattisgarh State that provides sewing machines. The objective of this scheme is to promote unorganized workers in their businesses and make them self-reliant. </p>
+        <h3>Eligibility</h3>
+        <p>1. Women who work in construction and are registered with the labor board/department.</p>
+        <p>2. Women between the ages of 18 and 50 who sew, embroider, or weave (tailor) clothes, are employed by an employer or have their own business, and earn a living for themselves and their families, in any district of the state.</p>
+        <p>3. Women who have not received a sewing machine or an amount equal to the value of a sewing machine under any other scheme run by the state government.</p>
+        <p>4. Women who have not received benefits under the Chief Minister Cycle Assistance Scheme run by the labor board/department.</p>
+        <h3>Documents Required</h3>
+        <p>1. Labor registration card.</p>
+        <p>2. Age certificate.</p>
+        <p>3. Bank passbook photocopy.</p>
+        <p>4. Income certificate.</p>
+        <h3>Benefits0</h3>
+        <p>1. Under the scheme, sewing machines will be supplied every year to the registered unorganized women workers of the state.</p>
+        <p> Register Here: <a href="https://cglabour.nic.in/ShramAyuktHome.aspx" target="_blank" style="font-size: 16px;">https://cglabour.nic.in/ShramAyuktHome.aspx</a></p>
+        </div>
+        </div>
+        <!-- Scheme 6-->
+        <div class="scheme-compartment" onclick="toggleDetails('details6')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Biotechnology Ignition Grant Scheme</h2>
+            Ministry Of Science And Technology
+            <div class="details" id="details6">
+            <p>The “Biotechnology Ignition Grant Scheme (BIG)” is a flagship scheme of the Biotechnology Industry Research Assistance Council (BIRAC), (a not-for-profit Section 8, Schedule B, Public Sector Enterprise, set up by the Department of Biotechnology (DBT), Government of India), which recognizes and invests in innovative ideas in the biotech sector. The ideas should have clear potential to translate into commercial products/technologies. BIG supports individual entrepreneurs/ start-ups from ideation to Proof of Concept (PoC).</p>
+            <h3>Eligibility</h3>
+            <p>1.The individual applicant should be an Indian citizen. </p>
+            <p>2.The primary applicant should be the Project Leader. </p>
+            <p>3. The applicant has to be incubated in an incubator (Incubator could be located anywhere in the country and may/may not be supported by BIRAC). At the time of application, the applicant is expected to have identified a preferred incubator. LoI/MoU with the incubator is required for final approval.</p>
+            <p>4. If the applicant is formally employed (or registered as a student) with an academic or research organization, then
+                <li>the applicant has to produce a No Objection Certificate (NOC) from the competent authority of the organization indicating that the organization has policies in place to allow the applicant while in service/ on sabbatical/on Extraordinary Leave:
+                accept funding support (if successful) as an individual,
+                manage the funds through a separate no-lien account in individual capacity
+                undertake the BIG project in an incubator
+                to create an enterprise.
+                Alternatively, the applicant needs to provide an undertaking that he/she plans to terminate his/her association with the current employer and take up the project full-time in the event of grant approval. A resignation/ relieving/ retirement letter will be needed as a supporting document before final approval and release of the grant.
+               </li>
+            </p>
+            <p>5. If the applicant is formally employed with a for-profit company/LLP:
+                <li>	the applicant needs to provide an undertaking that he/she plans to terminate his/her association with the current employer and take up the project full-time in the event of grant approval (A resignation/ relieving/retirement letter will be needed as supporting document before final approval and release of the grant.), or,
+                	Alternatively, the application should be submitted under the Company/LLP category.
+                </li>
+                </p>
+            <p>6. An individual who is a promoter shareholder of a Biotech company or one of the partners in a Biotech LLP will not be allowed to apply as an individual, irrespective of the percentage of shareholding of the applicant in the company. (In such a case, the application can be submitted through the company/LLP route, in case the company/LLP meets the required eligibility criteria as detailed below).</p>
+            <h3>Documents Required</h3>
+            <p>1. Letter of commitment from Scientific Advisors/ Mentors to serve as honorary advisors</p>
+            <p>2. Letter of intent of key members of the technical team</p>
+            <p>3. Letter of interest/intent from the incubator</p>
+            <p>4.Evidence of access to the unique facility(ies) needed to execute a project </p>
+            <p>5.Evidence of access to key samples needed to execute the project (eg: bio-fluids) </p>
+            <p>6. Any other relevant document</p>
+            <h3>Benefits</h3>
+            <p>1. Under the BIG scheme, BIRAC provides a grant-in-aid of up to INR 50 lakhs (approx. USD 75,000) for a period of 18 months.</p>
+            <p>BIG Partners and BIRAC provide continuous mentoring support to the grantees, including but not limited to the following:
+                <li> Technical Mentoring (Connect with Technical Experts)
+                 IP Support
+                 Legal Support
+                 Networking and Outreach
+                 Trainings
+                 Regulatory Advice
+                 Business Mentoring
+                 Connect with Investors
+                 Any other assistance on a case basis
+                 </li>
+                </p>
+            <p> Register Here: <a href="https://birac.nic.in/big.php" target="_blank" style="font-size: 16px;">https://birac.nic.in/big.php</a></p>
+            </div>
+            </div>
+            <!-- Scheme 7-->
+        <div class="scheme-compartment" onclick="toggleDetails('details7')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Aamar Dukan On Wheels</h2>
+            Assam
+            <div class="details" id="details7">
+            <p>The Government proposes to introduce a new module of “Aamar Dukan” namely “AAMAR DUKAN ON WHEELS” in the same line as the existing ‘Aamar Dukan’. Under the new module, 22 Non-PDS items (which may increase to 36) will be delivered to the doorstep of the consumer at below MRP with a minimum profit margin. Eco-friendly E-rickshaws will be used as the transportation mode under the Scheme. Through this scheme, Government plans to promote cashless transactions as the E-Rickshaws will have a GPS-enabled smart phone, and Bluetooth billing printer which will be connected to the smart phone.</p>
+            <h3>Eligibility</h3>
+            <p>1.The applicant should be educated unemployed youth. </p>
+            <p>2.The applicant should be a permanent resident of Assam. </p>
+            <p>3. He should attain the age of 18 years and above.</p>
+            <p>4. His name should be registered in the Employment Exchange.</p>
+            <p>5. The minimum educational qualification will be HSLC or equivalent.</p>
+            <h3>Documents Required</h3>
+            <p>1. Age proof.</p>
+            <p>1.Address proof. </p>
+            <p>3. Personal Identification: Aadhaar Card, Voter ID & Driving License. </p>
+            <p>4. Educational Qualification.</p>
+            <p>5. Experience certificate, if any.</p>
+            <p>6. Photographs.</p>
+            <h3>Benefits</h3>
+            <p>1. The beneficiary will keep the commodities allotted by the Department in case of AAMAR DUKAN on wheels in addition to other commodities.</p>
+            <p>The selected beneficiaries of AAMAR DUKAN on wheels is allowed to take a profit margin of Rs. 2.00 to Rs. 3.00 per Kg./Per litre from consumers.</p>
+            <p>The selected beneficiaries must abide by the direction of the Director, FCS&CA, Deputy Commissioners/Sub-Divisional Officers/Principal Secretaries of all Autonomous Councils. Any lapse on their part will be viewed seriously and legal action may be initiated also they will have to return the financial aid in addition to interest to the authority.</p>
+            <p>The beneficiary should operate his shop as per the schedule specified by the authority. Any lapses in this regard will amount to the cancellation of his licence.</p>
+            <p> Register Here: <a href="" target="_blank" style="font-size: 18px;"></a></p>
+            </div>
+            </div>
+            <!-- Scheme 8-->
+        <div class="scheme-compartment" onclick="toggleDetails('details8')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Assistance Scheme for Handicraft Artisans</h2>
+            kerala
+            <div class="details" id="details8">
+            <p>The Government of Kerala has initiated the scheme “Assistance Scheme for Handicraft Artisans (ASHA)” to provide financial assistance in the form of grants to the artisans in the handicrafts sector for setting up handicraft enterprises. The assistance is a one-time support to eligible artisans of the state as back-end assistance. The Scheme aims to replace the existing scheme and bring the artisans in the handicrafts sector under the ambit of a single scheme for availing financial assistance in the form of grant assistance for setting up handicraft enterprises. For the purpose of this scheme, an artisan is a person who has been categorized as such by the office of the Development Commissioner (Handicrafts), Govt. of India or SURABHI, KSBC, KADCO, HDCK, KELPALM and has taken effective steps to set-up an enterprise in the handicrafts sector.</p>
+            <h3>Eligibility</h3>
+            <p>1. All Micro Enterprises engaged in the handicraft sector and set up in the State, which had filed Entrepreneurs Memorandum Part-II with the respective General Manager, District Industries Centre, or have taken Udyog Aadhaar shall be eligible for assistance under the Scheme.</p>
+            <p>2. The applicant shall provide clarifications or further details sought by the recommending/ sanctioning authority.</p>
+            <p>3. The applicant shall allow inspection or verification of any details mentioned in the application including tools, equipment & accessories, and all other assets if so required by the recommending/sanctioning authority.</p>
+            <p>4. The applicant shall produce originals of any important documents if so required by the recommending/sanctioning authority for verification.</p>
+            <p>5. The applicant shall execute the requisite legal agreement on paper as and when the proposal is approved for implementation.</p>
+            <p>6. The applicant shall utilize the amount received only in the manner agreed upon.</p>
+            <p>7. The applicant shall operate the unit as stipulated in the agreement in which the quantum of support received failing which the assistance shall be resumed by resorting to the provisions of the Kerala Revenue Recovery Act.</p>
+            <h3>Documents Required</h3>
+            <p>1. Self-attested copy of the identity card of the applicant.</p>
+            <p>1. Passport size photo</p>
+            <p>3. Proof of age, if applicable</p>
+            <p>4. Self-attested copy of the resolution towards applying for this assistance in case of a unit other than proprietary.</p>
+            <p>5. Self-attested copy of Udyam Registration of the unit.</p>
+            <p>6. Copy of Caste Certificate (Attested by Gazetted Officer) in case of SC/ST artisans.</p>
+            <p>7. Self-attested copy of Project Report</p>
+            <p>8. Bank account details</p>
+            <h3>Benefits</h3>
+            <p>Provides assistance for the Fixed Capital Investment, i.e. construction of Work shed/Workshop, cost of tools, equipment, machinery and accessories, electrification, Technology support/product/Design development </p>
+            <p> For General Category artisans, assistance is 40% of the Fixed Capital Investment limited to ₹2.00 lakh</p>
+            <p> For Young (18 to 45 years), Women, and SC/ST artisans, the assistance is 50% limited to ₹3.00 lakh.</p>
+            <p> Register Here: <a href="https://industry.kerala.gov.in/index.php/schemes-mainmenu/asha-schemes" target="_blank" style="font-size: 16px;">https://industry.kerala.gov.in/index.php/schemes-mainmenu/asha-schemes</a></p>
+            </div>
+            </div>
+            <!-- Scheme 9-->
+        <div class="scheme-compartment" onclick="toggleDetails('details9')">
+            <img src="" alt="" class="scheme-image">
+            <h2>E-Thela Sahaayata Yojana</h2>
+            Chhattisgarh
+            <div class="details" id="details9">
+            <p>Labor Department of Chhattisgarh State started this scheme "E-Thela Sahaayata Yojana" for unorganized worker on 19 June 2017. The main objective of the scheme to empower unorganized worker by providing financial assistance for e-thela.</p>
+            <h3>Eligibility</h3>
+            <p>1.Unorganized workers registered under the State Social Security Board and running hand carts are eligible for the scheme. </p>
+            <p>2. Registered workers must be between the ages of 18 and 50.</p>
+            <p>3. Commercial vehicle drivers must have a health certificate from the RTO.</p>
+            <p>4. Registered workers must be registered with the Chhattisgarh Unorganized Workers State Social Security Board for at least 90 days.</p>
+            <p>5. Each worker is only eligible for the scheme once.</p>
+            <h3>Documents Required</h3>
+            <p>1. Aadhar card.</p>
+            <p>1. Permanent Residence Certificate</p>
+            <p>3. Copy of ration card.</p>
+            <p>4. Bank Account Details</p>
+            <p>5. Receipt of e-Thela.</p>
+            <h3>Benefits</h3>
+            <p>Registered unorganized labor individuals will need to cover the expenses of ₹ 10,000 for scheme execution.</p>
+            <p>A grant of ₹ 30,000/- will be provided by the Chhattisgarh Unorganized Worker State Social Security Board.</p>
+            <p>The remaining sum will be extended to the Rikshaw/Auto Driver as a bank loan, with the beneficiary responsible for repaying it within a specified timeframe and at the interest rate determined by the bank.</p>
+            <p>The Board will only transfer its contribution to the beneficiary's account once all the necessary loan-related</p>
+            <p> Register Here: <a href="https://cglabour.nic.in/" target="_blank" style="font-size: 16px;">https://cglabour.nic.in/</a></p>
+            </div>
+            </div>
+            <!-- Scheme 10-->
+        <div class="scheme-compartment" onclick="toggleDetails('details10')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Pradhan Mantri Kaushal Vikas Yojana - Short Term Training</h2>
+            Chhattisgarh
+            <div class="details" id="details10">
+            <p>STT component imparted at PMKVY Training Centres (TC) is expected to benefit candidates of Indian nationality who are either school/college dropouts or unemployed. Apart from providing training according to the National Skills Qualification Framework (NSQF), TCs also impart training in soft skills, entrepreneurship, financial and digital literacy. Upon successful completion of assessment, candidates are provided placement assistance by training providers.            </p>
+            <h3>Eligibility</h3>
+            <p>1. Is aged between 15-45 years</p>
+            <p>2.Possesses an Aadhaar card and an Aadhaar linked bank account </p>
+            <p>3. Fulfils other criteria for the respective job role as defined by the awarding body</p>
+            <h3>Documents Required</h3>
+            <p>1.As required for the job role </p>
+            <h3>Benefits</h3>
+            <p> Counselling</p>
+            <p> Online Information / Counselling Platform</p>
+            <p> Through Counselling Helpline</p>
+            <p> Through District-level skill information centre</p>
+            <p> Training</p>
+            <p> Digital Content</p>
+            <p> Training in Soft Skills, Entrepreneurship, Financial and Digital Literacy</p>
+            <p> Additional Support</p>
+            <p> Register Here: <a href="https://www.pmkvyofficial.org/trainingcenter" target="_blank" style="font-size: 16px;">https://www.pmkvyofficial.org/trainingcenter</a></p>
+            </div>
+            </div>
+             <!-- Scheme 11-->
+        <div class="scheme-compartment" onclick="toggleDetails('details11')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Rise Together</h2>
+            Jammu and Kashmir
+            <div class="details" id="details11">
+            <p>The programme shall be focused on introducing and developing community oriented entrepreneurship in J&K by providing strategic and financial assistance to dynamic and motivated youth. The programme envisions promotingcommunity based entrepreneurship optimally to generate jobs, income and promote spirit of social service among new-age young entrepreneurs of Jammu & Kashmir</p>
+            <h3>Eligibility</h3>
+            <p>1. Any domicile of J&K is essentially registered with Mission Youth, J&K.</p>
+            <p>2. Only the Youth Groups with minimum 3 youth members shall be eligible for Financial Assistance under the scheme;</p>
+            <p>3. The financial assistance would be given only to Youth Groups with all its members aged 18 to 35 years having a minimum qualification of 12th standard. Provided that CEO Mission Youth shall be competent to relax the educational qualification criteria for deserving candidates on a case to case basis, based on proper justification. </p>
+            <p>4. Preference will be given to youth registered as Self-Help Groups/ Registered Society/ Registered Trust.</p>
+            <p>5. None of the group members shall have availed benefit under any Self-Employment or similar schemes of the Government.</p>
+            <p>6. Character Antecedents of all members of the group should be certified</p>
+            <p>7. The applicants should not be defaulter to any Bank/ Financial Institution</p>
+            <p>8. Loan facility availed by the beneficiaries under Govt. sponsored scheme are not eligible.</p>
+            <p>9. The beneficiary must be unemployed. To be certified by competent authority.</p>
+            <h3>Documents Required</h3>
+            <p>1. Domicile Certificate/ Ration Card.</p>
+            <p>2. Aadhaar Card</p>
+            <p>3. Date of Birth Certificate issued by the competent authority</p>
+            <p>4. Matriculation Certificate.</p>
+            <p>5.Unemployment certificate (Unemployment Certificate is required only if applying as a new business). </p>
+            <p>6. Project report of the activity intended to be financed.</p>
+            <h3>Benefits</h3>
+            <p>1.Financial assistance to the extent of ₹ 20.00 lakh comprising of an upfront subsidy component provided by Mission Youth (Minimum of ₹2.5 lakh or 10% of project cost) and a Loan provided by the Bank (70% of the project cost to the extent of ₹ 17.50 lakh). </p>
+            <p> Register Here: <a href="https://jkgss.jk.gov.in/gssjk/citizen/initApp/30" target="_blank" style="font-size: 16px;">https://jkgss.jk.gov.in/gssjk/citizen/initApp/30</a></p>
+            </div>
+            </div>
+            <!-- Scheme 12-->
+        <div class="scheme-compartment" onclick="toggleDetails('details12')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Prime Minister's Employment Generation Programme</h2>
+            Ministry Of Micro, Small and Medium Enterprises
+            <div class="details" id="details12">
+            <p>Launched in August 2008, Prime Minister's Employment Generation Programme (PMEGP) is a credit-linked subsidy scheme, administered by the Ministry of Micro, Small and Medium Enterprises (MSME). PMEGP aims to generate employment opportunities through the establishment of micro-enterprises in the non-farm sector for rural as well as urban areas. The scheme has been approved for continuation over the 15th Finance Commission cycle i.e., for the period of five years from 2021-22 to 2025-26. PMEGP was formed by merging the two schemes that were in operation till 31st March 2008, namely Prime Minister's Rojgar Yojana (PMRY) and Rural Employment Generation Programme (REGP). An outlay of ₹13,554.42 Crore has been approved for PMEGP for five Financial Years (2021-22 to 2025-26) to set up about 4,00,000 projects with the creation of 30,00,000 employment @8 persons per unit). In addition, 1,000 Units will be upgraded in each FY. </p>
+            <h3>Eligibility</h3>
+            <p>1.Any individual, above 18 years of age. </p>
+            <p>2. There will be no income ceiling for assistance in setting up projects under PMEGP</p>
+            <p>3. For setting up of project costing above Rs.10 lakh in the Manufacturing sector and above ₹ 5,00,000 in the Business /Service sector, the beneficiaries should possess at least VIII standard pass educational qualification. </p>
+            <p>4. Assistance under the scheme is available only for new projects sanctioned specifically under the PMEGP. </p>
+            <p>5. Existing Units (under PMRY, REGP, or any other scheme of the Government of India or State Government) and the units that have already availed of Government Subsidy under any other scheme of the Government of India or State Government are not eligible. 
+            </p>
+            <h3>Documents Required</h3>
+            <p>1.Caste Certificate </p>
+            <p>2. Special Category Certificate, wherever required</p>
+            <p>3.Rural Area Certificate </p>
+            <p>4. Project Report</p>
+            <p>5. Education / EDP / Skill Development Training Certificate</p>
+            <p>6. Any other applicable document</p>
+            <h3>Benefits</h3>
+            <p>1. Margin Money Subsidy 
+                a) Funds will be allocated under annual Budget Estimates toward disbursement of Margin Money (subsidy) for setting up new micro-enterprises/units; and 
+                b) From the funds allocated under BE for the Margin Money subsidy, ₹ 100 Crores or as approved by the competent authority will be earmarked for each FY towards disbursement of Margin Money (subsidy) for the upgradation of existing PMEGP/REGP/MUDRA units</p>
+            <p> Register Here: <a href="https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp" target="_blank" style="font-size: 16px;">https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp</a></p>
+            </div>
+            </div>
+            <!-- Scheme 13-->
+        <div class="scheme-compartment" onclick="toggleDetails('details13')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Biponi Scheme</h2>
+            Assam
+            <div class="details" id="details13">
+            <p>The Biponi scheme is an initiative launched by the Government of Assam to promote the growth of small businesses, farmers, and artisans in the state. The scheme aims to create a more efficient and competitive market ecosystem in Assam, and provide various benefits and support to promote their businesses.</p>
+            <h3>Eligibility</h3>
+            <p>1. The location of the industry must be in rural areas of Assam</p>
+            <p>2. The industry must be already existing and also the unit necessity is to have a continuous operation for a minimum of 2 years.</p>
+            <p>3. The industry/unit should hold its own workshed for the process and production</p>
+            <p>4. The age of the applicant should be not less than 18 years and more than 50 years to apply for this scheme.</p>
+            <p>5. There is no bar of educational qualification</p>
+            <h3>Documents Required</h3>
+            <p>1. One Pass Port size photograph</p>
+            <p>2. Copy of Industry registration</p>
+            <p>3. Caste Certificate, as applicable</p>
+            <p>4. Training Certificate, if available</p>
+            <p>5. Copy of cancelled cheque with the name of the proprietor printed</p>
+            <p>6. Quotation from the fair organization regarding rent to be submitted</p>
+            <h3>Benefits</h3>
+            <p>Assistance at Rs. 5,000/- as stall rent for participation inside the state.</p>
+            <p>Assistance at Rs. 15,000/- as stall rent for participation outside the state</p>
+            <p>DA at 50/- per stall for actual fair days for participating units within the district</p>
+            <p>DA at 600/- per stall for actual fair days for participating units outside the district</p>
+            <p>DA at 500/- per stall for actual fair days for participating units outside the State</p>
+            <p>Up and down 2nd class Railway Fair for two people outside the state.</p>
+            <p> Register Here: <a href="https://industries.assam.gov.in/sites/default/files/Biponi_0.pdf" target="_blank" style="font-size: 16px;">https://industries.assam.gov.in/sites/default/files/Biponi_0.pdf</a></p>
+            </div>
+            </div>
+            <!-- Scheme 14-->
+        <div class="scheme-compartment" onclick="toggleDetails('details14')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Scheme for Margin Money Grant to Nano Units</h2>
+            Kerala
+            <div class="details" id="details14">
+            <p>The scheme “Margin Money Grant to Nano Units” is a loan-linked scheme operated by the Directorate of Industries and Commerce, Government of Kerala. The scheme aims to provide financial assistance to Nano units in the State, engaged in manufacturing, job work, and service activity having any type of value addition. </p>
+            <h3>Eligibility</h3>
+            <p>1. All new Nano proprietary enterprises in manufacturing/food processing and job works and units engaged in the service sector having any type of value addition, whose project cost includes fixed capital and working capital up to 10 lakhs are eligible for assistance under the scheme.</p>
+            <p>2. The unit shall not have availed any grant assistance earlier under any schemes of the Government of India & Government of Kerala or Local Self Government Department</p>
+            <h3>Documents Required</h3>
+            <p>1.Project Report </p>
+            <p>1. Title Deed of Land/ Land Tax Receipt if applicable</p>
+            <p>3. Ownership Certificate of the building if applicable</p>
+            <p>4. Registered Lease Deed or Rent Deed in such cases            </p>
+            <p>5. Proforma Invoice/Quotation of plant, machinery and electrification</p>
+            <p>6. Valuation of approved Engineer, Chattered Engineer for Civil Construction</p>
+            <p>7.Sanction letter from financial institution/Bank if any </p>
+            <p>8. Any other document as demanded by the recommending/sanctioning authority</p>
+            <h3>Benefits</h3>
+            <p>Units with project costs up to ₹10 Lakhs will be covered in the scheme</p>
+            <p>Margin Money Grant of 30% to 40% of the Total Project cost according to the category of the applicant</p>
+            <p>Women, Youth (Age between 18 and 40), Differentially-Abled Persons, Ex-Servicemen, and persons belonging to the SC/ST category will be eligible for a 10% additional Grant.</p>
+            <p>The maximum limit of margin money grant under the scheme shall be ₹4 lakhs per unit as follows.</p>
+            <p> Register Here: <a href="https://schemes.industry.kerala.gov.in/public/index.php/schemes" target="_blank" style="font-size: 16px;">https://schemes.industry.kerala.gov.in/public/index.php/schemes</a></p>
+            </div>
+            </div>
+            <!-- Scheme 15-->
+        <div class="scheme-compartment" onclick="toggleDetails('details15')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Revival and Rehabilitation Scheme for Defunct MSMEs and Cashew Processing Units</h2>
+            Kerala
+            <div class="details" id="details15">
+            <p>The trend in increasing number of defunct units is a challenge to the secondary sector. The MSMEs which have become defunct due to genuine issues in the value chain and have potential needs to be revived and rehabilitated considering the role of these units play in the state economy, the Government of Kerala launched a new scheme for defunct MSMEs including cashew processing units during 2020-21.</p>
+            <h3>Eligibility</h3>
+            <p>1. All MSMEs in the manufacturing sector which are defunct for at least 6 months due to genuine issues including cashew processing enterprises that have the potential to be revived and rehabilitated, are eligible for assistance under the scheme.</p>
+            <p>2. The applicant shall provide all required details and declare such information as to be true.</p>
+            <p>3. The applicant shall provide clarifications or further details sought by the recommending/ sanctioning authority.</p>
+            <p>4. The applicant shall allow inspection or verification of any details mentioned in the application including plant and machinery and all other assets if so required by recommending/ sanctioning authority.</p>
+            <p>5. The applicant shall produce originals of any important documents if so required by the recommending/ sanctioning authority for verification.</p>
+            <h3>Documents Required</h3>
+            <p>1. Copy of Identity proof of applicant</p>
+            <p>2. Udyog Aadhar/Udyam Registration</p>
+            <p>3. Revival Project Report</p>
+            <p>4. Title deed of land/land tax receipt if applicable</p>
+            <p>5. Ownership Certificate of the building if applicable</p>
+            <p>6. Registered Lease deed or rent deed in such cases</p>
+            <p>7. Invoice/bill/Proof of payment of Plant, machinery and electrification</p>
+            <p>8. Valuation of Approved Civil Engineer/ chartered Engineer for civil construction</p>
+            <p>8. Sanction order of Bank for Working Capital Loan if any</p>
+            <p>9. Audited Balance Sheet for the year before being defunct</p>
+            <p>10. Any other document as demanded by the recommending/sanctioning authority</p>
+            <h3>Benefits</h3>
+            <p>1. Entitlement in the scheme shall be limited to ₹15 Lakhs per applicant unit and it can avail only once.</p>
+            <p>2. Bank Sanction of fresh working capital loan is mandatory for availing Working Capital (Margin) Assistance, but a bank loan is not mandatory for assistance for building renovation, plant and machinery, electrification etc.</p>
+            <p> Register Here: <a href="https://industry.kerala.gov.in/index.php/schemes-mainmenu/revival-and-rehabilitation-scheme-for-defunct-msmes-and-cashew-processing-units-schemes" target="_blank" style="font-size: 16px;">https://industry.kerala.gov.in/index.php/schemes-mainmenu/revival-and-rehabilitation-scheme-for-defunct-msmes-and-cashew-processing-units-schemes</a></p>
+        </div>
+            </div>
+            <!-- Scheme 16-->
+        <div class="scheme-compartment" onclick="toggleDetails('details16')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Futkar Sabji, Phal-Phool Vikreta Hetu Taraju, Baat Evan Tokari Sahaayata Yojana</h2>
+            Chhattisgarh
+            <div class="details" id="details16">
+            <p>Labor Department of Chhattisgarh State started this scheme "Futkar Sabji, Phal-Phool Vikreta Hetu Taraju, Baat Evan Tokari Sahaayata Yojana" for unorganized worker on 15 June 2016.. The main objective of the scheme to empower unorganized worker by providing financial assistance of Cycle or Torch .</p>
+            <h3>Eligibility</h3>
+            <p>1. Applicant must be registered as an unorganized worker in any district of the state.</p>
+            <p>2. Applicant must have minimum age of 18 years. </p>
+            <p>3. Applicant should not have received the similar benefits from any other schemes. </p>
+            <h3>Documents Required</h3>
+            <p>1. Aadhar card.</p>
+            <p>2. Permanent residence certificate.</p>
+            <p>3. Bank account details.</p>
+            <p>4. Registration card.</p>
+            <h3>Benefits</h3>
+            <p>1. An amount of Rs 700/- (Rs seven hundred only) per beneficiary will be provided for scales, weights and 02 baskets.</p>
+            <p> Register Here: <a href="https://cglabour.nic.in/" target="_blank" style="font-size: 16px;">https://cglabour.nic.in/</a></p>
+            </div>
+            </div>
+            <!-- Scheme 17-->
+        <div class="scheme-compartment" onclick="toggleDetails('details17')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Skill Development Fee Reimbursement Scheme</h2>
+            Goa
+            <div class="details" id="details17">
+            <p>Through the “Skill Development Fee Reimbursement Scheme”, the SPC will reimburse 50% of the fees up to ₹ 50,000/- to the students who have successfully completed an SPC-approved technical skill training program in any of the approved domains from a Goan educational institute.</p>
+            <h3>Eligibility</h3>
+            <p>1. The applicant should be an educational institution.</p>
+            <p>2. The educational institute must be incorporated in Goa or have a registered place of business in Goa.</p>
+            <p>3. The technical skill training program must be approved by SPC and should fall under any of the technical domains:</p>
+            <p>4. The students who are currently pursuing their graduation or are within two years from receiving their graduate degree within the original stipulated period of study can enrol for these programs. </p>
+            <h3>Documents Required</h3>
+            <p>1. Aadhaar card of the student*</p>
+            <p>1. Course completion certificate*</p>
+            <p>3. Copy of SPC’s approval of the program*</p>
+            <p>4. Original Proof of Payment/Fee receipt*</p>
+            <p>5. The form and documents as mentioned in Annexure 1*</p>
+            <h3>Benefits</h3>
+            <p> Reimbursement of 50% of the fees up to ₹ 50,000/- to the students who have successfully completed an SPC-approved technical skill training program in any of the "approved domains", attended in a Goan educational institute:</p>
+            <p> Up to 1000 students per year can avail the benefits of this scheme. However, this cap can be reviewed and revised based on the need in future.</p>
+            <p> A student can avail the benefits of this scheme for any two courses in a year.</p>
+            <p> Register Here: <a href="https://www.startup.goa.gov.in/StartupIncentives" target="_blank" style="font-size: 16px;">https://www.startup.goa.gov.in/StartupIncentives</a></p>
+            </div>
+            </div>
+            <!-- Scheme 18-->
+        <div class="scheme-compartment" onclick="toggleDetails('details18')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Skill Development Promotion Scheme</h2>
+            Goa
+            <div class="details" id="details18">
+            <p>The scheme “Skill Development Promotion Scheme” is a scheme by the Department of Information Technology, Electronics and Communications, Government of Goa, for the Startups of Goa. The scheme is a part of the Start-up Policy 2017. The retail educational institutes that impart programming and technical skills will be encouraged to establish learning centres in Goa. Institutes listed by the start-up promotion cell and providing courses at pre-fixed rates will be provided subsidies among other benefits.</p>
+            <h3>Eligibility</h3>
+            <p>1. The applicant should be an educational institute listed by the Start-up Promotion Cell (SPC).</p>
+            <p>2. The applicant should have a valid Startup Cell Registration Number.</p>
+            <p>3. The applicant institute/offered course must have at least one established learning centre in Goa and be recognized by an authorized Government body such as AICTE, UGC, NBA, etc. as applicable.</p>
+            <h3>Documents Required</h3>
+            <p>1. Aadhaar Card of Relevant Employees*</p>
+            <p>1. Contract of Employment of Employees*</p>
+            <p>3. Salary Slips of Concerned Employees*</p>
+            <p>4. Bank Certification/ Bank Account Statement Showing Debit of Salary*</p>
+            <p>5. Copy of Original Bills From Service Providers/OEMs/authorized Vendors*</p>
+            <p>6. Authorization Letter From OEM for Empanelment of Vendor*</p>
+            <p>7. Original Proof of Payment *</p>
+            <p>8. The Form and Documents as Mentioned in Annexure 1*</p>
+            <h3>Benefits</h3>
+            <p>The retail educational institutes that impart programming and technical skills will be encouraged to establish learning centres in Goa. Institutes listed by the start-up promotion cell and providing courses at pre-fixed rates will be provided following benefits:
+                a)    Internet subsidy (up to ₹ 5,00,000 per year) for two years
+                b)    Power subsidy (up to ₹ 1,00,000 per year) for two years
+                c)    25% capital investments reimbursement up to ₹ 5,00,000 (on all capital procurement for a period of two years)
+                d)    10% salary cost subsidy up to ₹ 3,00,000 for a period of two years</p>
+            <p>  The maximum benefits aggregating all the benefits in this scheme should not exceed ₹ 10,00,000 per year.</p>
+            <p> The benefits of this scheme can only be availed by up to 10 institutes per year offering courses under the technical areas/ sectors outlined in Annexure 2. </p>
+            <p> Under no circumstance shall the benefits under this scheme be considered an entitlement. The SPC shall reserve the sole right to accept or reject applications.</p>
+            <p> The eligibility and disbursement of incentives shall be reviewed at the end of each year based on the performance of the institute.</p>
+            <p> Register Here: <a href="https://goaonline.gov.in/public/startuplogin?" target="_blank" style="font-size: 16px;">https://goaonline.gov.in/public/startuplogin?</a></p>
+            </div>
+            </div>
+            <!-- Scheme 19-->
+        <div class="scheme-compartment" onclick="toggleDetails('details19')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Gatidhara Scheme</h2>
+            West Bengal
+          <div class="details" id="details19">
+            <p>The scheme “Gatidhara Scheme” was launched by the Transport Department, Government of West Bengal in August 2014 for employment of registered unemployed youth of the State in the transport sector. The Gatidhara scheme was outlined by the Finance Minister in the budget in February. Families with a monthly income of ₹25000/- or less would qualify for financial support under the scheme. The transport department will interview applicants and draw up a list of eligible candidates. The labor department would provide the money, but the scheme would be implemented by the transport department. The objective of the scheme is to generate self-employment in the Urban and Rural areas of the state through the promotion of transport services.</p>
+            <h3>Eligibility</h3>
+            <p>1. The applicant should be a permanent resident of West Bengal.</p>
+            <p>2. The applicant should be enrolled in the Employment Bank of Labour Department, GOWB.</p>
+            <p>3. The age of the applicant should be between 25 years to 45 years (Relaxation 5 years for SC/ST & 3 years for OBC).</p>
+            <p>4. The family income of the applicant should be less than ₹25000/- per month.</p>
+            <p>5. More than one member of the same family is not eligible.</p>
+            <h3>Documents Required</h3>
+            <p>1. Family Income Certificate </p>
+            <p>1. Proof of enrollment in Employment Bank</p>
+            <p>3. Proof of age</p>
+            <p>4. Proof of address</p>
+            <p>5. Identity proof</p>
+            <p>6. Bank of details</p>
+            <p>7. Passport size photograph</p>
+            <p>8. Passport size photograph</p>
+            <h3>Benefits</h3>
+            <p>1. Under the scheme, the subsidy @ 30% of the ex-showroom price of the vehicle subject to a maximum of ₹1,00,000/- will be provided to the beneficiary for purchasing any commercial vehicle.</p>
+            <p> Register Here: <a href="https://wb.gov.in/government-schemes-details-gatidhara.aspx" target="_blank" style="font-size: 16px;">https://wb.gov.in/government-schemes-details-gatidhara.aspx</a></p>
+            </div>
+            </div>
+            <!-- Scheme 20-->
+        <div class="scheme-compartment" onclick="toggleDetails('details20')">
+            <img src="" alt="" class="scheme-image">
+            <h2>Goa (Technical/ Vocational Training To Sex Workers And Sexually Abused Women) Scheme, 2013 (PRABHAT)</h2>
+            Goa
+            <div class="details" id="details20">
+            <p>The "Goa (Technical/ Vocational Training to Sex Workers and Sexually Abused Women) Scheme, 2013 (PRABHAT)" by the Department of Women and Child Development, Government of Goa, provides technical/vocational training for sex workers and sexually abused women to enable them to earn for their livelihood through such technical/vocational training and skill. The department will take the assistance of members of reputed NGOs/Trust/Society/professionals/expert bodies, who are involved in the rehabilitation of sex workers.</p>
+            <h3>Eligibility</h3>
+            <p>1.The applicant should be a permanent resident of West Bengal. </p>
+            <p>2. The applicant should be enrolled in the Employment Bank of Labour Department, GOWB.</p>
+            <p>3. The age of the applicant should be between 25 years to 45 years (Relaxation 5 years for SC/ST & 3 years for OBC).</p>
+            <p>4. The family income of the applicant should be less than ₹25000/- per month.</p>
+            <p>5. More than one member of the same family is not eligible</p>
+            <h3>Documents Required</h3>
+            <p>1. Family Income Certificate </p>
+            <p>1. Proof of enrollment in Employment Bank</p>
+            <p>3. Proof of age</p>
+            <p>4. Proof of address</p>
+            <p>5. Identity proof</p>
+            <p>6. Bank of details</p>
+            <p>7. Passport size photograph</p>
+            <p>8. Caste certificate, if applicable</p>
+            <h3>Benefits</h3>
+            <p>1. Under the scheme, the subsidy @ 30% of the ex-showroom price of the vehicle subject to a maximum of ₹1,00,000/- will be provided to the beneficiary for purchasing any commercial vehicle.</p>
+            <p> Register Here: <a href="https://employmentbankwb.gov.in/index.php" target="_blank" style="font-size: 16px;">https://employmentbankwb.gov.in/index.php</a></p>
+            </div>
+            </div>
+
+            <script>
+                function toggleDetails(id) {
+                    const details = document.getElementById(id);
+                    details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+                }
+                function toggleDetails(id) {
+                    const details = document.getElementById(id);
+                    if (details.style.display === "none" || details.style.display === "") {
+                        details.style.display = "block";
+                    } else {
+                        details.style.display = "none";
+                    }
+                }
+                </script>
+                </script>
+                </body>
+                </html>

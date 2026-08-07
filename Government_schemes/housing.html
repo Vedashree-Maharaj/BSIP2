@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing & Shelter</title>
+    <style>
+        body {
+            background: #f9f9f9;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+           
+        }
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 100; 
+    
+}
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .scheme-header-image {
+            width: 100%;
+            max-width: 1600px;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 9px;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 5%; 
+            transform: translate(0, -50%); 
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(3, 35, 116);
+           
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .scheme-compartment {
+            font-family: cambria;
+            font-size: 17px;
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            background: white;
+            color: rgb(5, 5, 5);
+            transition: 0.3s ease, box-shadow 0.3s ease;
+            background-size: cover; 
+            background-position: center; 
+            background-color: rgb(192, 225, 253);
+            background-repeat: no-repeat;
+        }
+
+        .scheme-compartment:hover{
+            color: black;
+            box-shadow: 0 0 20px 10px rgba(11, 11, 11, 0.1);
+        }
+
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .details h3 {
+            margin-left: 20px;
+        }
+
+        .benefits, .eligibility, .documents-required {
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        div {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .scheme-image {
+            float: left;
+            margin-left: 5px;
+            margin-top: -20px;
+            max-width: 110px;
+            height:110px;
+            border-radius: 8px;
+        }
+        .scheme-name {
+            flex-grow: 1; 
+        }
+    </style>
+    <body>
+    <div class="image-container">
+        <img src="Housingimg.webp" alt="Housing & Shelter" class="scheme-header-image">
+        <div class="overlay-text"> Housing & Shelter</div>
+    </div>
+<br/><br/>
+<!-- Scheme 1-->
+<div class="scheme-compartment" onclick="toggleDetails('details1')">
+    <img src="" alt="" class="scheme-image">
+     <h2>Grant of House Construction Subsidy to Scheduled Caste People</h2>
+     Puducherry
+    <div class="details" id="details1">
+    <p>The scheme “Grant of House Construction Subsidy to Scheduled Caste People” was introduced by the Adi Dravidar Welfare Department, Government of Puducherry. Through this scheme, the poor Scheduled Caste people, and other Economically backward class people, who meet the eligibility criteria, are provided house construction subsidy. </p>
+    <h3>Eligibility</h3>
+    <p>1. The applicant should be a citizen of India.</p>
+    <p>2. The applicant should be a native or a permanent resident of the Union Territory of Pondicherry.</p>
+    <p>3. The applicant should not possess a house.</p>
+    <p>4. The applicant should be from Scheduled Caste or from Other Economically Backward Class.</p>
+    <p>5. For Scheduled Caste:</p>
+    <li>The applicant should have a house site of an area of 450 sq.ft to build the house.</li>
+    <li>The annual income of the applicant should not exceed ₹2,00,000/-.</li>
+    <p>6. For Other Economically Backward Class:</p>
+    <li>The applicant should have a house site granted by Adi Dravidar Welfare Department.</li>
+    <li>The annual income of the applicant should not exceed ₹24,000/-.</li>
+    <h3>Documents Required</h3>
+    <p>1. Residence-cum-nativity Certificate.</p>
+    <p>2. Aadhar Card.</p>
+    <p>3. Bank Pass Book.</p>
+    <p>4. Caste Certificate.</p>
+    <p>5. Encumbrance Certificate.</p>
+    <p>6. Income Certificate.</p>
+    <p>7. Parent Document.</p>
+    <p>8. Photocopy of Plot / Vacant Land.</p>
+    <p>9. Plot proof.</p>
+    <p>10. Ration Card.</p>
+    <p>11. Recent passport-size photograph.</p>
+    <p>12. Voter Card.</p>
+    <p>13. Site Map/ Land Mark.</p>
+    <h3>benefits</h3>
+    <p>1. The subsidy amount of ₹4,00,000/- is granted in 3 Instalments as follows:</p>
+    <li>1st Installment of ₹1,50,000/- on possession of vacant house site.</li>
+    <li>2nd Installment of ₹1,50,000/-.</li>
+    <li>3rd Installment of ₹1,00,000/-.</li>
+    <p>The building materials worth ₹1,00,000/- will also be provided.</p>    
+    <p> Register Here: <a href="https://edistrict.py.gov.in/" target="_blank" style="font-size: 16px;">https://edistrict.py.gov.in/</a></p>
+    </div>
+    </div>
+    <!-- Scheme 2-->
+    <div class="scheme-compartment" onclick="toggleDetails('details2')">
+        <img src="" alt="" class="scheme-image">
+         <h2>Homes For Intellectually Impaired Persons</h2>
+         Maharashtra
+        <div class="details" id="details2">
+        <p>The "Homes for Intellectually Impaired Persons" is a scheme by the Department of Social Justice & Special Assistance, Govt. of Maharashtra. In this scheme, Mentally Deficient Children who are in need of care and protection are admitted into shelter homes through the Child Welfare Committee of the district formed under the Juvenile Justice (Care & Protection of Children) Act 2000 and Amendment Act 2006. The numbers of MDC homes are 19 out of which 14 are granted and 5 are non-granted.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a citizen of India.</p>
+        <p>2. The applicant should be an orphan.</p>
+        <p>3. The applicant should be a permanent resident of Maharashtra State.</p>
+        <p>4. The applicant should be a Mentally Deficient Child (MDC) who is in need of care and protection.</p>
+        <p>5. The percentage of the disability should be 40% or above.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar Card.</p>
+        <p>2. 2-Passport Sized Photograph (Signed Across).</p>
+        <p>3. Proof of Age (Birth Certificate, etc).</p>
+        <p>4. Residential Certificate / Domicile Certificate of the State of Maharashtra.</p>
+        <p>5. Disability Certificate.</p>
+        <p>6. Details of the Bank Account (Bank Name, Branch Name, Address, IFSC, etc).</p>
+        <p>7. Any other document required by the Child Welfare Committee.</p>
+        <h3>Benefits</h3>
+        <p>1. The Mentally Deficient Children who are in need of care and protection are admitted into shelter homes.</p>
+        <p>2. There are free facilities of food, shelter, and care & protection are provided in these home</p>
+        <p> Register Here: <a href="https://sjsa.maharashtra.gov.in/en/scheme-category/disability-welfare" target="_blank" style="font-size: 16px;">https://sjsa.maharashtra.gov.in/en/scheme-category/disability-welfare</a></p>
+        </div>
+        </div>
+<!-- Scheme 3-->
+<div class="scheme-compartment" onclick="toggleDetails('details3')">
+    <img src="" alt="" class="scheme-image">
+     <h2>Double Bedroom Housing Scheme (2BHK Scheme)</h2>
+     Telangana
+    <div class="details" id="details3">
+    <p>The government of Telangana formulated the double bed room housing scheme in the month of October 2015 with a view to providing dignity to the poor by providing 100% subsidized housing. There is no beneficiary contribution under this scheme which is one of its kind. In rural areas, beneficiaries solely depend on seasonal conditions for their earnings, the 2BHK housing helped in protecting them from debt traps as was the case in the past.</p>
+    <h3>Eligibility</h3>
+    <p>1. The applicant should belong to Below Poverty Line (BPL) Category.</p>
+    <p>Reservation / Preference / Priority</p>
+    <p>Rural:  SC/ST: 50%, Minorities: 7%, and balance 43% for others.</p>
+    <p>Urban: SC: 17%, ST: 6%, Minorities: 12%, and balance 65% for others.</p>
+    <h3>Documents Required</h3>
+    <p>1. PMAY/2BHK housing application (Available at Meeseva:<a href="file:///C:/Users/Admin/Downloads/ApplicationforGrantofDoubleBedRoomHouse-ApplicationForm.pdf" target="_blank" style="font-size: 16px;">Link</a>)</p>
+    <p>2. Ration Card / Food Security Card</p>
+    <p>3. Aadhar Card of Applicant and Family Members</p>
+    <p>4. Voter ID card of the Applicant</p>
+    <p>5. Community Certificate of Applicant</p>
+    <p>6. Income Proof of Applicant</p>
+    <p>7. Passport Size Photo</p>
+    <p>8. Bank Passbook</p>
+    <h3>benefits</h3>
+    <p>1. The "Double Bedroom Housing", covering the 560 Sqft plinth area, provides one Master Bedroom (90 sq. ft), one Normal Bedroom (81 sq. ft), one Living Room (140 sq. ft), one Kitchen (36 sq. ft), one Toilet (22 sq. ft), one Toilet (18 sq. ft), Stair Case (82 sq. ft), Wash Area (20 sq. ft), Wall Area (71 sq. ft).</p>
+    <p>2. The plot area is 125 sq yards for an independent house in a rural area and worked out to 36 Sq yards of undivided land share in G++ pattern houses in urban areas. </p>
+    <p>3. The land is provided free of cost apart from the cost of the dwelling unit.</p>
+    <p>4. No beneficiary contribution.</p>    
+    <p> Register Here:<a href="https://2bhk.telangana.gov.in/WebsiteLogin.do" target="_blank" style="font-size: 16px;">https://2bhk.telangana.gov.in/WebsiteLogin.do</a></p>
+    </div>
+    </div>
+    <!-- Scheme 4-->
+    <div class="scheme-compartment" onclick="toggleDetails('details4')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Housing Subsidy Scheme (GBOCWWB)</h2>
+        Gujarat
+        <div class="details" id="details4">
+        <p>The “Housing Subsidy Scheme” is implemented by the Gujarat Building and Other Construction Worker’s Welfare Board (GBOCWWB), Labour, Skill Development & Employment Department, Government of Gujarat. The main objective of this scheme is to provide financial assistance to construction workers registered with the Gujarat Building and Other Construction Worker’s Welfare Board to build their own houses.</p>
+        <h3>Eligibility</h3>
+        <p>1. The construction workers registered with the Gujarat Building and Other Construction Worker’s Welfare Board will be eligible to get the benefit of this scheme.</p>
+        <p>2. At the time of applying for the benefits of this scheme, it will be mandatory to have at least the last 2 years of registration with the construction worker's board.</p>
+        <p>3. To avail the benefit of this scheme the construction worker should have documented the building after the date of resolution of the scheme (29/06/2020). The application has to be made within one year from the date of the document mentioned in the house purchase document.</p>
+        <p>4. The loan taken for a house purchased by a registered construction worker should not exceed ₹15 lakhs and the loan tenure should be 10 years or more.</p>
+        <p>5. The registered construction worker benefiting from this scheme should not own any house or property in the joint name of the worker or his wife or joint, which guarantee has to be given by the worker in an affidavit as per the prescribed format herein.</p>
+        <h3>Documents Required</h3>
+        <p>1. Photograph of the worker</p>
+        <p>2. Aadhaar Card</p>
+        <p>3. Ration Card</p>
+        <p>4. Caste Category certificate, if applicable</p>
+        <p>5. Proof of age (Birth certificate/Driving Licence/PAN Card/Voter ID Card)</p>
+        <p>6. <a href="https://enirmanbocw.gujarat.gov.in/ApplicationDocuments/SelfCertificateLatest.pdf" target="_blank" style="font-size: 16px;">Self-Decleration</a>Certificate</p>
+        <p>7. Employer Certificate</p>
+        <p>8. Bank Passbook/cancelled Cheque</p>
+        <p>9. Any other documents as required</p>
+        <h3>Benefits</h3>
+        <p>1. Under the scheme, the assistance of ₹1,50,000/- will be provided to registered construction workers for a duration of 5 years, with ₹30,000/- disbursed annually subject to the terms of assistance.</p>
+        <p>2. The construction workers who have taken a loan up to a maximum of ₹15 lakhs to buy their house will be provided ₹30,000/- per year for the five years as per plan.</p>
+        <p> Register Here: <a href="https://bocwwb.gujarat.gov.in/schemes.htm" target="_blank" style="font-size: 16px;">https://bocwwb.gujarat.gov.in/schemes.htm</a></p>
+</div>
+    </div>
+    <!-- Scheme 5-->
+    <div class="scheme-compartment" onclick="toggleDetails('details5')">
+    <img src="" alt="" class="scheme-image">
+    <h2>Advance for Purchase or Construction of House (GBOCWWB)</h2>
+    Goa
+    <div class="details" id="details5">
+    <p>Advance for Purchase or Construction of House (GBOCWWB)" is a Welfare Scheme by the Goa Building and Other Construction Workers Welfare Board, Department of Labour and Employment, Goa. Through this scheme, the worker registered with the Board is sanctioned financial assistance of upto ₹50,000/- in advance for the outright purchase/construction of a house. The applications are accepted offline.</p>
+    <h3>Eligibility</h3>
+    <p>1. The applicant should be a Worker registered with the Goa Building and Other Construction Workers Welfare Board.</p>
+    <p>2. The worker should be between 18 to 60 years of age.</p>
+    <p>3. The worker should have completed ninety days of service as a registered worker in the year.</p>
+    <p>4. The applicant should have had membership in the Fund continuously for five years.</p>
+    <p>5. The applicant should have fifteen years of service for superannuation.</p>
+    <h3>Documents Required</h3>
+    <p>1. Worker Registration Card/Number.</p>
+    <p>2. Receipt of Payment of First & Last Subscription with the Board.</p>
+    <p>3. Plan and Estimate (Approved).</p>
+    <p>4. Encumbrance Certificate of 14 Years.</p>
+    <p>5. Location Certificate.</p>
+    <p>6. Land Tax Receipt.</p>
+    <p>7. Original Document.</p>
+    <p>8. Attested Copy of Ration Card (Pages 2, 4) for Maintenance Application.</p>
+    <p>9. Ownership of the Building (for Maintenance Only).</p>
+    <p>10. Terminal Benefit Declaration.</p>
+    <p>11. Attested Copies of Identity Card & Passbook.</p>
+    <h3>Benefits</h3>
+    <p>1. ₹50,000/- is sanctioned as advance and shall be recovered in equal instalments as may be fixed by the Board.</p>
+    <p><b>Application Process</b></p>
+    <p>* The interested applicant should visit the Office of the Commissioner, Labour & Employment, 2nd Floor, Sharma Shakti Bhavan, Patto Plaza, Panaji-Goa (0832-2437081/82/83, com-labo.goa@nic.in) and request a hard copy of the prescribed format of the application form from the concerned authority.</p>
+    </div>
+    </div>
+    <!-- Scheme 6-->
+    <div class="scheme-compartment" onclick="toggleDetails('details6')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Financial Assistance for Hostel Facility in Professional/Technical Institutions (HBOCWWB)</h2>
+        Haryana
+        <div class="details" id="details6">
+        <p>The scheme “Financial Assistance for Hostel Facility in Professional/Technical Institutions” is implemented by the Haryana Building and Other Construction Workers Welfare Board (HBOCWWB), Labour Department, Government of Haryana. Under this scheme, the Board provides financial assistance of up to ₹1,20,000/- to the children of construction workers for hostel facilities while they pursue technical/professional courses in recognized institutes. The financial assistance will be given directly to the recognized government or private institute, college, university, IIT, IIM, AIIMS, etc. Reimbursement of admission expenses will be provided to the candidate upon submission of an attested copy of the original receipt.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be engaged in building or construction work.</p>
+        <p>2. The applicant should be registered with the Haryana Building & Other Construction Workers Welfare Board.</p>
+        <p>3. The registered worker should have a minimum of one year of regular membership.</p>
+        <p>4. The worker should have an active membership with the Board.</p>
+        <p>5. The children of construction workers who stay in hostels while pursuing regular technical/professional courses are eligible for benefits under this scheme.</p>
+        <p>6. Financial assistance for hostel facilities will be available for up to three children per worker.</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity proof i.e. Aadhaar Card, Voter Card</p>
+        <p>2. Passport-size photograph</p>
+        <p>3. Attested work experience document</p>
+        <p>4. Ration Card</p>
+        <p>5. Bank account details</p>
+        <p>6. Caste Certificate (If applicable)</p>
+        <p>7. Proof of age</p>
+        <p>8. Parivar Pehchan Patra (Family ID)</p>
+        <p>9. Disability certificate (If applicable)</p>
+        <h3>Benefits</h3>
+        <p>1. Under the scheme, financial assistance up to a maximum limit of ₹1,20,000/- is provided to the children of construction workers for hostel facilities in professional/technical institutions.</p>
+        <p> Register Here: <a href="https://hrylabour.gov.in/bocw/settings/schemeDetail/149" target="_blank" style="font-size: 16px;">https://hrylabour.gov.in/bocw/settings/schemeDetail/149</a></p>
+        </div>
+        </div>
+        <!-- Scheme 7-->
+    <div class="scheme-compartment" onclick="toggleDetails('details7')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Loans and Advances for Construction of a House</h2>
+        Manipur
+        <div class="details" id="details7">
+        <p>The "Loans and Advances for Construction of a House" scheme by the Manipur Building and Other Construction Workers' Welfare Board provides financial support to registered construction workers to build their own houses. Beneficiaries can avail loans based on their skill level, with amounts ranging from ₹1,00,000/- to ₹2,00,000/-. The loan carries a 5% simple interest, with a 5-year repayment period, and the worker must submit a completion certificate within six months of receiving the loan.</p>
+        <h3>Eligibility</h3>
+        <p>1. The construction worker should be registered under the Manipur Building and Other Construction Workers' Welfare Board. </p>
+        <p>2. The construction worker should have an active labor card.</p>
+        <p>3. The construction must execute a surety bond</p>
+        <h3>Documents Required</h3>
+        <p>1. Certificate of Registration.</p>
+        <p>2. Payment Receipt of the Last Contribution.</p>
+        <p>3. Estimate Cost Copy of the House Construction.</p>
+        <p>4. Sanction Order Copy (granting loan/advance for construction of house in respect of the subsidy up to 25% of the amount of loan/advance received).</p>
+        <p>5. Aadhaar Card of the applicant and construction worker.</p>
+        <p>6. First Page of Bank Passbook.</p>
+        <h3>Benefits</h3>
+        <p>1. Financial assistance for house construction for building workers:</p>
+        <li>Unskilled Labour: ₹1,00,000/-.</li>
+        <li>Simi-Skilled Labour: ₹1,50,000/-.</li>
+        <li>Skilled Labour: ₹2,00,000/-.</li>
+        <p> Register Here: <a href="http://manipurbcwb.in/" target="_blank" style="font-size: 18px;">http://manipurbcwb.in/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 8-->
+    <div class="scheme-compartment" onclick="toggleDetails('details8')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Ved-Vyas Housing Construction Scheme</h2>
+        Jharkhand
+        <div class="details" id="details8">
+        <p>The "Ved Vyas Housing Construction Scheme" was launched by the Department of Agriculture, Animal Husbandry and Co-operative, Government of Jharkhand. The scheme aims to provide financial assistance to active and traditional fish farmers in Simdega district for building houses. The scheme prioritizes individuals particularly those living in kutcha or thatched houses, and ensures benefits for women and disabled applicants. </p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant must be an active or traditional fish farmer.</p>
+        <p>2. The applicant should be living in kutcha or thatched houses.</p>
+        <p>3. The applicant's family belongs to the below poverty line.</p>
+        <p>4. The applicant must not have previously benefited from the departmental fishermen housing scheme or Indira Awas or equivalent housing scheme of the Central/State Government</p>
+        <p>5. The applicant must own land for house construction.</p>
+        <h3>Documents Required</h3>
+        <p>1. Applicant’s Photograph</p>
+        <p>2. Kutcha House Photograph</p>
+        <p>3. Caste Certificate</p>
+        <p>4. Residential Certificate</p>
+        <p>5. Income Certificate</p>
+        <p>6. Land Ownership Documents</p>
+        <p>7. Fish Farming Activity Certificate (from the Block Development Officer)</p>
+        <h3>Benefits</h3>
+        <p>1. Financial assistance of ₹1,20,000/- for housing construction.</p>
+        <p> Guideliness to apply Scheme: <a href="https://cdn.s3waas.gov.in/s30fcbc61acd0479dc77e3cccc0f5ffca7/uploads/2023/10/2023102792.pdf" target="_blank" style="font-size: 16px;">https://cdn.s3waas.gov.in/s30fcbc61acd0479dc77e3cccc0f5ffca7/uploads/2023/10/2023102792.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 9-->
+    <div class="scheme-compartment" onclick="toggleDetails('details9')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Pratyasha Scheme</h2>
+        West Bengal
+        <div class="details" id="details9">
+        <p>The Govt. of West Bengal has undertaken a housing project scheme named " PRATYASHA" for Police Personnel (from Inspectors to Constables) working in the West Bengal Police to materialize their dreams of owning houses. The West Bengal State Police Housing Corporation will construct various types of flats with the financial assistance of Housing and Urban Development Corporation Ltd (HUDCO) and all Police Personnel would be welcome to fill in forms for their required housing assistance.</p>
+        <h3>Eligibility</h3>
+        <p>1. One Police personnel in the above-noted ranks will be eligible to submit only one application for this Scheme (No other family member may apply separately).</p>
+        <p>2. In the case of a joint application, only a member of the immediate family (spouse, parents, and children) is eligible to be the second applicant. The first applicant shall be the eligible personnel of West Bengal Police or Kolkata Police only.</p>
+        <p>3. Only one flat will be allotted to the eligible applicant if he/she is selected through lottery on a random selection basis.</p>
+        <p>4. The Corporation, however, reserves the right to relax any of these conditions whatsoever without assigning any reason.</p>
+        <h3>Documents Required</h3>
+        <p>1. Demand Draft/ Pay Order/ Banker’s Cheque as per category dwelling unit.</p>
+        <p>2. Demand Draft/ Pay Order/ Banker’s Cheque for an additional amount only for parking space.</p>
+        <p>3. One self-attested photocopy of the PAN Card of the applicant and of joint applicants (if any)</p>
+        <p>4. Salary Certificate of the applicant (s) issued by the DDO (as per proforma annexed with the application form).</p>
+        <p>5. Two sets of passport-size photographs with signatures on the back side of the photographs.</p>
+        <p>6. One canceled cheque of the applicant</p>
+        <p>7. Copy of the first page of the Bank A/C Pass Book of the applicant showing address, A/C No., Branch Code No. etc.</p>
+        <h3>Benefits</h3>
+        <p>1. Construction of various types of flats for all Police Personnel of West Bengal</p>
+        <p> Register Here: <a href="https://wb.gov.in/government-schemes-details-pratyasha.aspx" target="_blank" style="font-size: 16px;">https://wb.gov.in/government-schemes-details-pratyasha.aspx</a></p>
+        </div>
+        </div>
+        <!-- Scheme 10-->
+    <div class="scheme-compartment" onclick="toggleDetails('details10')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Akanksha Housing Scheme</h2>
+        West Bengal
+        <div class="details" id="details10">
+        <p>Akanksha Housing Scheme was launched by the Housing Department, Government of West Bengal on 28/02/2014 to provide housing to the serving State Government employees. The present project is situated in premises No. 07/300, Block-DB, Action Area-ID at New Town, Kolkata - 700107 on a pilot basis. The project has been designed on a no-profit no-loss basis and without the cost of the land. The instant project is spread over 5.0599 acres of land and comprising of 13 towers. (7 nos. of G+10 Towers for Elegant, Premium and Classic categories and 6 nos. of Straight 4 towers for Economy and Standard categories) containing of 576 flats and 236 covered Car parking spaces and 35 open Car parking spaces (only for Elegant, Premium and Classic categories) with provision for Gymnasium, Club-House and Community Hall within the Complex. </p>
+        <h3>Eligibility</h3>
+        <p> All serving State Govt. employees as defined in West Bengal Service Rules, except those State Govt. employees who have their own housing scheme such as `Pratyasha’ for Policemen or similar housing schemes under Government of West Bengal stated in Memorandum No. FD-647 dated 29th August, 2014 of the Finance Department of Govt. of West Bengal may apply for New Town Project under `AKANKSHA </p>
+        <h3>Documents Required</h3>
+        <p>1. Copy of Identity Card</p>
+        <p>2. Online application with deposit amount of ₹25,000 as "Application money" in any branch of Bank of Baroda by generating challan through online system.</p>
+        <p>3. Copy of Aadhar Card</p>
+        <p>4. Residence proof of the applicant of the state of West Bengal</p>
+        <p>5. Income certificate of the applicant.</p>
+        <h3>Benefits</h3>
+        <p>1. ELEGANT for employees with grade pay of ₹8900/- & above, built-up area is 1434 sq. feet. It consists of three bedrooms, one drawing cum Dining, one kitchen, two balconies, two toilets, two water closets & one store room, available at the rate of ₹3100/- per Sq. ft., total price ₹44,45,400/-</p>
+        <p>2. PREMIUM for employees with grade pay Between ₹ 7601/- to ₹ 8899/-, built-up area is 1273 sq. feet. It consists of three bedrooms, one drawing cum Dining, one kitchen, two balconies, two toilets, & one water closet, available at the rate of ₹ 3100/- per Sq. ft., total price  ₹39,46,300/-</p>
+        <p>CLASSIC for employees with grade pay Between ₹4801/- to ₹7600/-, built-up area is 924 sq. feet. It consists of two bedrooms, one drawing cum Dining, one kitchen, one balcony, & two toilets, available at the rate of ₹ 3100/- per Sq. ft., total price  ₹28,64,400/- </p>
+        <p> Register Here: <a href="https://wbhousing.gov.in/general-terms-condition" target="_blank" style="font-size: 16px;">https://wbhousing.gov.in/general-terms-condition</a></p>
+        </div>
+        </div>
+        <!-- Scheme 11-->
+    <div class="scheme-compartment" onclick="toggleDetails('details11')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Construction of Free Houses for Tribals</h2>
+        Tamil Nadu
+        <div class="details" id="details11">
+        <p>The "Construction of Free Houses for Tribals" scheme launched by the Adi Dravidar and Tribal Welfare Department, Tamil Nadu, is designed to provide free housing to tribal communities who have been allocated house site pattas. Under this program, the state government constructs houses on these lands to ensure that tribals have access to safe and permanent shelter. The scheme is primarily aimed at improving the living conditions of SC/ST communities by providing basic infrastructure.</p>
+        <h3>Eligibility</h3>
+        <p>1. The beneficiary should be a resident of Tamil Nadu.</p>
+        <p>2. The beneficiary should belong to the Scheduled Castes (SC)/ Scheduled Tribes (ST) communities.</p>
+        <p>3. The beneficiary must possess a free house site patta.</p>
+        <h3>Documents Required</h3>
+        <p>1. Proof of identity (Aadhar card or any other document as directed by the authority).</p>
+        <p>2. Caste certificate (Adi Dravidar/ Tribal/ Adi Dravidar converted to Christian).</p>
+        <p>3. Free house site patta.</p>
+        <p>4. Any other documents (if required).</p>
+        <h3>Benefits</h3>
+        <p>1. Housing Infrastructure: Free house construction for eligible tribal peopl</p>
+        <p><b>Applications Process</b></p>
+        <p>The interested applicant should collect the application form from the office of the Commissioner/ Panchayat Union/ District Adi dravidar and Tribal Welfare Officer/ Commissioner of Tribal Welfare.</p>
+        </div>
+        </div>
+        <!-- Scheme 12-->
+    <div class="scheme-compartment" onclick="toggleDetails('details12')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Housing Assistance</h2>
+        Madhya Pradesh
+        <div class="details" id="details12">
+        <p>The scheme "Housing Assistance (Madhya Pradesh)" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, provides housing support to tribal boys and girls pursuing higher education outside their hometown,</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a native of Madhya Pradesh.</p>
+        <p>2. The applicant should have passed class 12th from a government or non-government college.</p>
+        <p>3. The applicant should be enrolled in a graduate, graduate diploma, technical, or paramedical course.</p>
+        <p>4. The applicant should be regularly admitted in the course they are pursuing.</p>
+        <p>5. The applicant should not have received admission to a government hostel.</p>
+        <h3>Documents Required</h3>
+        <p>1. Passport-size Photograph</p>
+        <p>2. Aadhaar card</p>
+        <p>3. Domicile certificate of Madhya Pradesh</p>
+        <p>4. Caste certificate</p>
+        <p>5. Previous class passing certificate/marksheet</p>
+        <p>6. Samagra ID</p>
+        <p>7. Bank account details/Bank Passbook</p>
+        <p>8. Other necessary documents if required</p>
+        <h3>Benefits</h3>
+        <p>1. The scheme provides housing assistance to tribal boys/girls to continue their higher and higher education outside their home town (for whom hostels are not available).</p>
+        <p> Register Here: <a href="https://www.tribal.mp.gov.in/mptaas" target="_blank" style="font-size: 16px;">https://www.tribal.mp.gov.in/mptaas</a></p>
+        </div>
+        </div>
+        <!-- Scheme 13-->
+    <div class="scheme-compartment" onclick="toggleDetails('details13')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Birsa Awas Nirman Yojana</h2>
+        Jharkhand
+        <div class="details" id="details13">
+        <p>The "Birsa Awas Nirman Yojana" was launched by the Department of Scheduled Tribe, Scheduled Caste, Minority & Backward Class Welfare, Government of Jharkhand, and aims to provide durable housing for the economically weaker Scheduled Tribes (ST) with a focus on timely construction, monitoring, and quality management. Under this scheme, financial assistance is disbursed in three installments to beneficiaries, with an additional ₹500/- incentive per unit provided to Panchayat Volunteers or Self-Help </p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant must belong to the Scheduled Tribe community in Jharkhand.</p>
+        <p>2. The applicant must fall under the economically weaker section.</p>
+        <p>3. Only individuals residing in rural areas are eligible.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhaar Card.</p>
+        <p>2. Proof of Residence.</p>
+        <p>3. Caste Certificate (issued by a competent authority).</p>
+        <p>4. Bank Passbook.</p>
+        <h3>Benefits</h3>
+        <p>1. Financial Support: Beneficiaries receive ₹1,31,500/- for constructing houses under the scheme:</p>
+        <li>First Installment: ₹40,000/- upon approval of the house.</li>
+        <li>Second Installment: ₹75,000/- after window sealing.</li>
+        <li>Third Installment: ₹16,500/- upon completing the house, including painting.</li>
+        <p><b>Application Process</b></p>
+        <p>The interested applicant should visit (during office hours) the Panchayat office or designated Welfare Department office and request a hard copy of the prescribed format of the application form from the staff exclusively entrusted to issue and collect filled-in applications.</p>
+        </div>
+        </div>
+        <!-- Scheme 14-->
+    <div class="scheme-compartment" onclick="toggleDetails('details14')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Nirman Shramik Pucca Ghar Yojana</h2>
+        Odisha
+        <div class="details" id="details14">
+        <p>Labour and ESI Department, Government of Odisha has introduced a scheme "Nirman Shramik Pucca Ghar Yojana (NSPGY)" to meet the housing needs of the building and other construction workers in rural areas, registered under the Odisha Building & Other Construction Workers Welfare Board (OB&OCWWB), who play a pivotal role in the construction of individual and community assets and do not have their own pucca house.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a permanent resident of Odisha.</p>
+        <p>2. The applicant should not have a pucca house.</p>
+        <p>3. The applicant must be engaged as a 'building worker' in building or other construction work as defined U/s. 2(1)(d) of the Building & Other Construction Workers' (RE&CS) Act, 1996 and Notification No.5654 dated 27.06.2009 and No.5985 dated 28.07.2014 of the Labour & ESI Deptt., Govt. of Odisha for not less than 90 days during the preceding 12 months.</p>
+        <p>4. The applicant should not be engaged in any building or other construction work to which the provisions of the Factories Act, 1948, or the Mines Act, 1952 apply.</p>
+        <p>5. The applicant should be completed 18 years of age, but not completed 60 years of age.</p>
+        <p>6. The applicant should not be a member of any other Welfare Fund established under any law.</p>
+        <p>7. The construction worker should not enroll in any other district of Odisha or any other State of the country as a beneficiary in any Welfare Board.</p>
+        <p>8. The applicant must be registered with the Odisha Building & Other Construction Workers' Welfare Board under the Building and Other Construction Workers (RE&CS) Act.</p>
+        <h3>Documents Required</h3>
+        <p>1. Aadhar Card</p>
+        <p>2. Passport size photograph</p>
+        <p>3. Ration Card</p>
+        <p>4. Residence certificate</p>
+        <p>5. Income certificate</p>
+        <p>6. Bank details</p>
+        <p>7. Proof of age</p>
+        <h3>Benefits</h3>
+        <p>1. The unit cost under NSPGY for new construction of dwelling houses is ₹1,20,000/- for Non-IAP districts and ₹1,30,000/- for IAP districts.</p>
+        <p>2. The beneficiary of NSPGY will get a wage component for 90 person days and 95 person days in Non-IAP and IAP districts respectively under MGNREGS, which can be revised by the government from time to time.</p>
+        <p> Register Here: <a href="https://bocboard.labdirodisha.gov.in/Building/" target="_blank" style="font-size: 16px;">https://bocboard.labdirodisha.gov.in/Building/</a></p>
+        </div>
+        </div>
+        <!-- Scheme 15-->
+    <div class="scheme-compartment" onclick="toggleDetails('details15')">
+        <img src="" alt="" class="scheme-image">
+        <h2>GITANJALI HOUSING SCHEME</h2>
+        West Bengal
+        <div class="details" id="details15">
+        <p>Intending to provide proper shelters, free of cost, to the poor, the Government in Housing Department has laid proper focus on the construction of houses for the Economically Weaker Section of people.  This scheme is being implemented in the rural and non-Municipal urban areas in coordination with seven other Government Departments under the name of ‘Gitanjali’ and ‘Amar Thikana’.  </p>
+        <h3>Eligibility</h3>
+        <p>1. Homeless people living in the city who are citizens of West Bengal can come under this scheme. </p>
+        <p>2. People who have become homeless due to floods or other natural calamities will be considered eligible for the Gitanjali Housing Scheme.</p>
+        <p>3. Category of Beneficiaries:</p>
+        <li>Poor People in Rural and Urban areas.</li>
+        <li>Poor People in Erosion/ Flood/ Other calamity affected/ Disaster prone areas.</li>
+        <li>Poor People affected by Government Projects (As part of rehabilitation measures).</li>
+        <h3>Documents Required</h3>
+        <p>1. Identity proof includes Aadhaar card, voter ID, PAN card, passport, or driving license.</p>
+        <p>2. Address proof such as Aadhaar card, voter ID, electricity bill, water bill, or telephone bill.</p>
+        <p>3. Income certificate issued by a competent authority.</p>
+        <p>4. Bank account details.</p>
+        <p>5. Photographs of the applicant.</p>
+        <p>6. Proof of age such as birth certificate, school leaving certificate, or passport.</p>
+        <p>7. Any other document specified by the government or the housing development authority.</p>
+        <h3>Benefits</h3>
+        <p>1. The Benefits of the scheme are to provide proper shelter to the economically weaker section of society as well as to create additional employment opportunities for construction workers etc.</p>
+        <p> Register Here: <a href="https://wbhousing.gov.in/pages/display/7-scheme" target="_blank" style="font-size: 16px;"></a>https://wbhousing.gov.in/pages/display/7-scheme</p>
+        </div>
+        </div>
+        <!-- Scheme 16-->
+    <div class="scheme-compartment" onclick="toggleDetails('details16')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Government Working Women’s Hostel</h2>
+        Tamil Nadu
+        <div class="details" id="details16">
+        <p>The scheme "Government Working Women’s Hostel" is an initiative by the Social Welfare and Women Empowerment Department, Govt. of Tamil Nadu. The scheme aims to safe accommodation and food facilities to working women who live far away from their families and belong to lower and middle-income groups. The women can stay 3 years in the hostel.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a working woman.</p>
+        <p>2. If the applicant is in Chennai, the income of the applicant should not exceed ₹25000/- per month.</p>
+        <p>3. If the applicant is in a district other than Chennai, the income of the applicant should not exceed ₹15000/- per month.</p>
+        <h3>Documents Required</h3>
+        <p>1. Certificates issued by the employer.</p>
+        <p>2. Income Certificate.</p>
+        <p>3. Certificate showing that the applicant belongs to a District / Place other than the place where the hostel is located.</p>
+        <h3>Benefits</h3>
+        <p>1. Affordable Monthly Rent: ₹300/- per month in Chennai and ₹200/- per month in other Districts.</p>
+        <p>2. Safe accommodation, food, and electricity charges on a dividing basis.</p>
+        <p>3. The women can stay for 3 years in the hostel.</p>
+        <p> Applications Form<a href="https://cms.tn.gov.in/sites/default/files/forms/social_welfare_form6.pdf" target="_blank" style="font-size: 16px;">https://cms.tn.gov.in/sites/default/files/forms/social_welfare_form6.pdf</a></p>
+        </div>
+        </div>
+        <!-- Scheme 17-->
+    <div class="scheme-compartment" onclick="toggleDetails('details17')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme</h2>
+        Karnataka
+        <div class="details" id="details17">
+        <p>The "Dr. Babu Jagjivan Ram Living cum work shed Construction Scheme" provides financial assistance to houseless leather artisans for constructing Living cum Work Sheds through the Rajiv Gandhi Rural Housing Corporation. The artisans who own a site, old house, or hut in their name can avail the benefit. </p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be leather artisans.</p>
+        <p>2. The applicant should belongs to sub-castes Arundathiyar, Chammadiya, Chamar, Chambar, Chamagar, Madar, Madig, Madiga, Mini Madig, Jambavalu, Haralayya, Machigar, Mochigar, Mochi, muchi, Telugu Mochi, kamaati mocha, Rohidas, Dhor, kakkayya, Kankayya, Samagara, Samagar, Aadhi Anddra, Aadhi Dravida, Aadhi Karnataka among schedule castes.</p>
+        <p>3. The age of the applicant should be 18 years.</p>
+        <p>4. The applicant's annual income should not exceed ₹32,000/- in rural areas and ₹87,600/- in urban areas.</p>
+        <p>5. The applicant or their family members must not have received benefits from other schemes, except Training/Paaduke kuteera schemes.</p>
+        <p>6. The applicant's family members should not be employed in government or semi-government organizations.</p>
+        <h3>Documents Required</h3>
+        <p>1. Passport-size Photograph of the applicant and spouse.</p>
+        <p>2. Aadhaar Card.</p>
+        <p>3. Caste Certificate with RD Number.</p>
+        <p>4. Income Certificate.</p>
+        <p>5. Ration Card.</p>
+        <p>6. Site Khatha Certificate.</p>
+        <p>7. E-Shram Card (for cobbler/shoemaker profession).</p>
+        <p>8. Skill test certificate issued by the Technical Section Committee of the Corporation.</p>
+        <h3>Benefits</h3>
+        <p>1. Financial Assistance: ₹2,50,000/- for construction.</p>
+        <p>2. Subsidy Amount: ₹2,20,000/- provided by the government.</p>
+        <p>3. Beneficiary Contribution: ₹30,000/-.</p>
+        <p> Register Here: <a href="https://sevasindhu.karnataka.gov.in/Sevasindhu/English" target="_blank" style="font-size: 16px;"></a>https://sevasindhu.karnataka.gov.in/Sevasindhu/English</p>
+        </div>
+        </div>
+        <!-- Scheme 18-->
+    <div class="scheme-compartment" onclick="toggleDetails('details18')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Ramai Awas (Gharkul) Scheme for SC & Nav-Buddha (Urban and Rural)</h2>
+        Maharashtra
+        <div class="details" id="details18">
+        <p>The scheme "Ramai Awas (Gharkul) Scheme for SC & Nav-Buddha (Urban and Rural)" is a housing scheme by the Department of Social Justice & Special Assistance of the Government of Maharashtra. The scheme aims to raise the standard of living of the individuals from the Scheduled Caste and Nav-Buddha communities residing in rural & urban areas of Maharashtra.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should have lived for 15 years in Maharashtra.</p>
+        <p>2. The applicant's annual income limit is as under -</p>
+        <li>For Rural Area, ₹1,00,000/- per annum.</li>
+        <li>For Municipal Area, ₹1,50,000/- per annum.</li>
+        <li>For Municipal Corporation, ₹2,00,000/- per annum.</li>
+        <p>3. Only one person in the family will get the benefit.</p>
+        <p>4. The applicant should have his/her own land</p>
+        <h3>Documents Required</h3>
+        <p>1. Residential / Domicile Certificate.</p>
+        <p>2. Caste Certificate.</p>
+        <p>3. Aadhaar Card</p>
+        <p>4. Address Proof.</p>
+        <p>5. Identity Card.</p>
+        <p>6. Passport Size Photo.</p>
+        <h3>Benefits</h3>
+        <p>1. The benefits vary with the area that the beneficiary resides in -</p>
+        <li>Rural Area: ₹ 1,00,000/- (Beneficiary's share is Nil)</li>
+        <li>Municipal Area: ₹ 1,50,000/- (Beneficiary's share is 7.5%)</li>
+        <li>Municipal Corporation: ₹ 2,00,000/- (Beneficiary's share is 10%)</li>
+        <p> Register Here: <a href="https://sjsa.maharashtra.gov.in/en/ramai-awas-gharkul-scheme-sc-nav-buddha-urban-and-rural" target="_blank" style="font-size: 16px;"></a>https://sjsa.maharashtra.gov.in/en/ramai-awas-gharkul-scheme-sc-nav-buddha-urban-and-rural</p>
+        </div>
+        </div>
+        <!-- Scheme 19-->
+    <div class="scheme-compartment" onclick="toggleDetails('details19')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Construction Workers Night Shelter Scheme (MPBOCWWB)</h2>
+        Madhya Pradesh
+        <div class="details" id="details19">
+        <p>The "Construction Workers Night Shelter Scheme" by the Labour Department, Government of Madhya Pradesh provides for the construction of night shelters in urban areas and large Gram Panchayats. These shelters are intended for construction workers and their dependent family members who temporarily relocate from other places for work.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be a Construction worker.</p>
+        <p>2. The Construction worker and their family members should possess valid identity cards.</p>
+        <p>3. The Construction worker and their family members should have temporarily relocated from other places for work.</p>
+        <h3>Documents Required</h3>
+        <p>1. Identity Proof (e.g., Aadhaar Card)</p>
+        <p>2. Passport-size Photograph</p>
+        <p>3. Proof of Residence (e.g., Utility bill, Voter ID, etc.)</p>
+        <p>4. Ration Card (optional)</p>
+        <p>5. Bank Account Details (e.g., Copy of Bank Passbook)</p>
+        <p>6. Caste Certificate (if applicable)</p>
+        <p>7. Undertaking/Declaration</p>
+        <p>8. Age Certificate</p>
+        <p>9. Valid Identity Cards</p>
+        <p>10. Employment Certificate</p>
+        <p>11. Signature</p>
+        <p>12. Any other documents as required</p>
+        <h3>Benefits</h3>
+        <p>1. Night shelters for construction workers and their families.</p>
+        <p> Register Here: <a href="https://labour.mp.gov.in/Public/Pages/Schemes/NirmanShramikRenBasera.aspx" target="_blank" style="font-size: 16px;">https://labour.mp.gov.in/Public/Pages/Schemes/NirmanShramikRenBasera.aspx</a></p>
+        </div>
+        </div>
+        <!-- Scheme 20-->
+    <div class="scheme-compartment" onclick="toggleDetails('details20')">
+        <img src="" alt="" class="scheme-image">
+        <h2>Scheduled Caste Boys/Girls Housing Assistance Scheme</h2>
+        Madhya Pradesh
+        <div class="details" id="details20">
+        <p>The scheme "Scheduled Caste Boys/Girls Housing Assistance Scheme" by the Tribal Welfare and Scheduled Caste (SC) Department, Government of Madhya Pradesh, provides financial support for residential facilities to Scheduled Caste students who are studying in colleges outside their native village/city, enabling them to continue their college education.</p>
+        <h3>Eligibility</h3>
+        <p>1. The applicant should be from the Scheduled Caste (SC) category.</p>
+        <p>2. The applicant should be a native of Madhya Pradesh.</p>
+        <p>3. The applicant should be a College Student.</p>
+        <p>4. The applicant should meet the income limit prescribed under the Post Matric Scholarship Scheme.</p>
+        <p>5. The applicant should be residing outside their native city/village.</p>
+        <h3>Documents Required</h3>
+        <p>1. Proof of Identity</p>
+        <p>2. Caste Certificate</p>
+        <p>3. Income Certificate</p>
+        <p>4. Proof of College Admission </p>
+        <p>5. Bank Account Details</p>
+        <h3>Benefits</h3>
+        <p>1. ₹2,000/- per month, if the student is residing in a Divisional headquarters (Bhopal, Indore, Gwalior, Jabalpur, Ujjain).</p>
+        <p>2. ₹1,250/- per month, if the student is residing in Other District Headquarters.</p>
+        <p>3. ₹1,000/- per month, if the student is residing in a Tehsil/Development Block Headquarters.</p>
+        <p> Register Here: <a href="https://cmhelpline.mp.gov.in/KnowYourEntitleDetail.aspx?status=ByVibhag&pointvalue=2&Schemeid=610" target="_blank" style="font-size: 16px;">https://cmhelpline.mp.gov.in/KnowYourEntitleDetail.aspx?status=ByVibhag&pointvalue=2&Schemeid=610</a></p>
+        </div>
+        </div>
+        <script>
+            function toggleDetails(id) {
+             const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+             details.style.display = "block";
+              } else {
+              details.style.display = "none";
+             }
+              }
+          </script>
+        <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+        }
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+        </script>
+        </script>
+        </body>
+        </html>

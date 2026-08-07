@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+body {
+    background: url("flag3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+button {
+    background-color: #26d117;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a940e;
+}
+.icons a {
+    margin: 5px;
+    color: #333;
+}
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender input {
+    margin: 0;
+    width: auto;
+}
