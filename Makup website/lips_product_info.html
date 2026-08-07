@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GlowGlam - Product Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: rgb(236, 235, 245);
+        }
+        .product-container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .product-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .product-price {
+            font-size: 22px;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        .rating {
+            color: gold;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .shades {
+            font-size: 16px;
+            color: gray;
+            margin-top: 10px;
+        }
+        .btn {
+            width: 200px;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .cart-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .cart-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container product-container">
+    <img id="productImage" src="" alt="Product Image">
+    <div class="product-title" id="productName">Loading...</div>
+    <div class="product-price" id="productPrice">₹0</div>
+    <div class="rating">⭐⭐⭐⭐☆ (4.5)</div>
+    <div class="shades">Shades: <span id="productShades">N/A</span></div>
+    <button class="btn btn-primary cart-btn" id="addToCart">Add to Cart</button>
+</div>
+
+<script>
+    // Get product details from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('name');
+    const productPrice = urlParams.get('price');
+    const productImage = urlParams.get('image') || 'default.jpg';  // Default image if not provided
+    const productShades = urlParams.get('shades') || "Red, Pink, Nude";
+
+    // Update product details on page
+    document.getElementById("productName").textContent = productName;
+    document.getElementById("productPrice").textContent = "₹" + productPrice;
+    document.getElementById("productImage").src = productImage;
+    document.getElementById("productShades").textContent = productShades;
+
+    // Add to Cart
+    document.getElementById("addToCart").addEventListener("click", function() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push({ name: productName, price: parseInt(productPrice) });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(productName + " added to cart!");
+    });
+</script>
+
+</body>
+</html>
