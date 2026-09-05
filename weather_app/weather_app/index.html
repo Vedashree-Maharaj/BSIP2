@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">🌤️ SkyCast</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="news.html">Weather News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+
+            <li><a href></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <h1>SkyCast - Your Daily Weather Companion</h1>
+            <p>Get the latest and most accurate weather updates for your location.</p>
+            <div class="search-box">
+                <input type="text" id="city" placeholder="Enter your city...">
+                <button onclick="getWeather()">🔍</button>
+            </div>
+        </header>
+
+        <div id="weather-container">
+            <div id="weather"></div>
+        </div>
+    </main>
+    <footer>
+        <p>🌐 Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather API</a></p>
+        <p>
+            <a href="#">Home</a> | 
+            <a href="help.html">Help</a> | 
+            <a href="contact.html">Contact</a>  |
+            <a href="news.html">News</a>
+        </p>
+        <p>🌡️ Temperature: Celsius (°C) | 💨 Wind Speed: Meters per second (m/s) | 🌦️ Tip: Always carry an umbrella if rain is expected! ☂️</p>
+        <p>© 2024 WeatherApp | Designed by Vedashree 🌍</p>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
