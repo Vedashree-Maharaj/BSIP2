@@ -1,6 +1,6 @@
 function getWeather() {
     let city = document.getElementById("city").value.trim();
-    let apiKey = "0195d879f1b5a8b4ff2978314e2109ca";
+    let apiKey = "594f1dde903365ef941fc0a2e0359cbd";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(url)
